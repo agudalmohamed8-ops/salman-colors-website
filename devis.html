@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devis gratuit — Salman Colors</title>
+  <meta name="description" content="Demandez un devis gratuit pour votre projet de finition — Salman Colors"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.png" alt="Salman Color" class="navbar-logo" onerror="this.src='logo.svg'">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><span class="ar-only">الرئيسية</span><span class="fr-only">Accueil</span></a></li>
+      <li><a href="services.html"><span class="ar-only">خدماتنا</span><span class="fr-only">Services</span></a></li>
+      <li><a href="portfolio.html"><span class="ar-only">أعمالنا</span><span class="fr-only">Réalisations</span></a></li>
+      <li><a href="blog.html"><span class="ar-only">المدونة</span><span class="fr-only">Blog</span></a></li>
+      <li><a href="about.html"><span class="ar-only">من نحن</span><span class="fr-only">À propos</span></a></li>
+      <li><a href="contact.html"><span class="ar-only">اتصل بنا</span><span class="fr-only">Contact</span></a></li>
+    </ul>
+    <div class="navbar-right">
+      <div class="lang-switcher">
+        <span class="lang-label active" data-lang="fr">FR</span>
+        <button class="lang-toggle" aria-label="Switch language"><span class="lang-thumb"></span></button>
+        <span class="lang-label" data-lang="ar">AR</span>
+      </div>
+      <button class="hamburger" id="menuToggle" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html"><span class="ar-only">الرئيسية</span><span class="fr-only">Accueil</span></a>
+      <span class="breadcrumb-sep">/</span>
+      <span><span class="ar-only">طلب عرض سعر</span><span class="fr-only">Devis gratuit</span></span>
+    </div>
+    <h1 class="page-hero-title ar-only">طلب عرض سعر مجاني</h1>
+    <h1 class="page-hero-title fr-only">Demandez un devis gratuit</h1>
+    <p class="page-hero-sub ar-only">أخبرنا عن مشروعك وسنتواصل معك خلال 24 ساعة</p>
+    <p class="page-hero-sub fr-only">Parlez-nous de votre projet et nous vous contacterons sous 24h</p>
+  </div>
+</section>
+
+<!-- DEVIS FORM -->
+<section class="devis-section">
+  <div class="container">
+    <div class="devis-intro">
+      <span class="section-tag ar-only">مجاني وبدون التزام</span>
+      <span class="section-tag fr-only">Gratuit &amp; sans engagement</span>
+      <h2 class="section-title ar-only">أخبرنا عن مشروعك</h2>
+      <h2 class="section-title fr-only">Décrivez votre projet</h2>
+      <p class="ar-only">سيتم إرسال طلبك مباشرة إلى فريقنا عبر واتساب</p>
+      <p class="fr-only">Votre demande sera envoyée directement à notre équipe via WhatsApp</p>
+    </div>
+
+    <div class="devis-form-wrap">
+      <form id="devisForm" novalidate>
+
+        <!-- Section 1: Identité -->
+        <div class="form-section-title ar-only">معلومات التواصل</div>
+        <div class="form-section-title fr-only">Vos coordonnées</div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="dName">
+              <span class="ar-only">الاسم الكامل *</span>
+              <span class="fr-only">Nom complet *</span>
+            </label>
+            <input type="text" id="dName" name="name" required
+              class="bilingual-placeholder"
+              placeholder-ar="محمد الأمين"
+              placeholder-fr="Mohammed Amine"/>
+          </div>
+          <div class="form-group">
+            <label for="dPhone">
+              <span class="ar-only">رقم الهاتف / واتساب *</span>
+              <span class="fr-only">Téléphone WhatsApp *</span>
+            </label>
+            <input type="tel" id="dPhone" name="phone" required dir="ltr" placeholder="+212 6XX XXX XXX"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dCity">
+            <span class="ar-only">المدينة *</span>
+            <span class="fr-only">Ville *</span>
+          </label>
+          <input type="text" id="dCity" name="city" required
+            class="bilingual-placeholder"
+            placeholder-ar="الرباط، الدار البيضاء..."
+            placeholder-fr="Rabat, Casablanca..."/>
+        </div>
+
+        <!-- Section 2: Services -->
+        <div class="form-section-title ar-only">الخدمة المطلوبة</div>
+        <div class="form-section-title fr-only">Service(s) souhaité(s)</div>
+
+        <div class="checkbox-group">
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="Aménagement"/>
+            <span><span class="ar-only">تهيئة المساحات</span><span class="fr-only">Aménagement</span></span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="Peinture"/>
+            <span><span class="ar-only">صباغة / Peinture</span><span class="fr-only">Peinture (صباغة)</span></span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="Zellige"/>
+            <span><span class="ar-only">زليج / Zellige</span><span class="fr-only">Zellige (زليج)</span></span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="Ameublement"/>
+            <span><span class="ar-only">فرش / Ameublement</span><span class="fr-only">Ameublement (فرش)</span></span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" name="service" value="Tout inclus"/>
+            <span><span class="ar-only">كلشي معاً (كل الخدمات)</span><span class="fr-only">Tout inclus (كلشي معاً)</span></span>
+          </label>
+        </div>
+
+        <!-- Section 3: Bien -->
+        <div class="form-section-title ar-only">نوع العقار</div>
+        <div class="form-section-title fr-only">Type de bien</div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="dType">
+              <span class="ar-only">نوع العقار</span>
+              <span class="fr-only">Type de bien</span>
+            </label>
+            <select id="dType" name="type">
+              <option value="" disabled selected>
+                <span class="ar-only">اختر نوع العقار</span>
+                <span class="fr-only">Choisir...</span>
+              </option>
+              <option value="Appartement">Appartement / شقة</option>
+              <option value="Villa">Villa / فيلا</option>
+              <option value="Maison">Maison / دار</option>
+              <option value="Local commercial">Local commercial / محل تجاري</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dSurface">
+              <span class="ar-only">المساحة التقريبية</span>
+              <span class="fr-only">Superficie approximative</span>
+            </label>
+            <div class="input-suffix-wrap">
+              <input type="number" id="dSurface" name="surface" min="1"
+                class="bilingual-placeholder"
+                placeholder-ar="مثال: 80"
+                placeholder-fr="Ex: 80"/>
+              <span class="input-suffix">m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Budget -->
+        <div class="form-section-title ar-only">الميزانية التقريبية</div>
+        <div class="form-section-title fr-only">Budget approximatif</div>
+
+        <div class="form-group">
+          <label for="dBudget">
+            <span class="ar-only">الميزانية</span>
+            <span class="fr-only">Budget</span>
+          </label>
+          <select id="dBudget" name="budget">
+            <option value="" disabled selected>
+              <span class="ar-only">اختر الميزانية</span>
+              <span class="fr-only">Sélectionner...</span>
+            </option>
+            <option value="Moins de 20 000 DH">Moins de 20 000 DH / أقل من 20.000 درهم</option>
+            <option value="20 000 – 50 000 DH">20 000 – 50 000 DH</option>
+            <option value="50 000 – 100 000 DH">50 000 – 100 000 DH</option>
+            <option value="Plus de 100 000 DH">Plus de 100 000 DH / أكثر من 100.000 درهم</option>
+          </select>
+        </div>
+
+        <!-- Section 5: Message -->
+        <div class="form-section-title ar-only">تفاصيل إضافية</div>
+        <div class="form-section-title fr-only">Détails supplémentaires</div>
+
+        <div class="form-group">
+          <label for="dMessage">
+            <span class="ar-only">رسالتك (اختياري)</span>
+            <span class="fr-only">Message (optionnel)</span>
+          </label>
+          <textarea id="dMessage" name="message" rows="4"
+            class="bilingual-placeholder"
+            placeholder-ar="أي تفاصيل إضافية عن مشروعك..."
+            placeholder-fr="Détails supplémentaires sur votre projet..."></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn-gold btn-full" style="margin-top:0.5rem">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span class="ar-only">إرسال الطلب عبر واتساب</span>
+          <span class="fr-only">Envoyer la demande via WhatsApp</span>
+        </button>
+        <p class="devis-submit-note ar-only">سيتم فتح واتساب تلقائياً بعد الإرسال</p>
+        <p class="devis-submit-note fr-only">WhatsApp s'ouvrira automatiquement après l'envoi</p>
+
+      </form>
+
+      <div id="devisSuccess" style="display:none" class="form-success">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h4 class="ar-only">تم إرسال طلبك بنجاح!</h4>
+        <h4 class="fr-only">Votre demande a été envoyée !</h4>
+        <p class="ar-only">سيتواصل معك فريقنا قريباً على رقمك</p>
+        <p class="fr-only">Notre équipe vous contactera bientôt sur votre numéro</p>
+        <a href="index.html" class="btn btn-gold" style="margin-top:1rem">
+          <span class="ar-only">العودة للرئيسية</span>
+          <span class="fr-only">Retour à l'accueil</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="Salman Colors" class="footer-logo-img" onerror="this.src='logo.svg'">
+        </div>
+        <p class="footer-desc"><span class="ar-only">من الصباغة حتى الفرش — كل شي معانا</span><span class="fr-only">De la peinture jusqu'à l'ameublement — tout avec nous</span></p>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/salmanecolors" target="_blank" rel="noopener" aria-label="Facebook" class="footer-social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://www.instagram.com/salmancolor/" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://www.tiktok.com/@salman_color" target="_blank" rel="noopener" aria-label="TikTok" class="footer-social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+          <a href="https://www.youtube.com/@salmancolor" target="_blank" rel="noopener" aria-label="YouTube" class="footer-social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          <a href="https://wa.me/212662193210" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer-social-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5><span class="ar-only">روابط</span><span class="fr-only">Liens</span></h5>
+        <ul class="footer-links">
+          <li><a href="index.html"><span class="ar-only">الرئيسية</span><span class="fr-only">Accueil</span></a></li>
+          <li><a href="services.html"><span class="ar-only">خدماتنا</span><span class="fr-only">Services</span></a></li>
+          <li><a href="portfolio.html"><span class="ar-only">أعمالنا</span><span class="fr-only">Réalisations</span></a></li>
+          <li><a href="blog.html"><span class="ar-only">المدونة</span><span class="fr-only">Blog</span></a></li>
+          <li><a href="about.html"><span class="ar-only">من نحن</span><span class="fr-only">À propos</span></a></li>
+          <li><a href="contact.html"><span class="ar-only">اتصل بنا</span><span class="fr-only">Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5><span class="ar-only">خدماتنا</span><span class="fr-only">Services</span></h5>
+        <ul class="footer-links">
+          <li><a href="services.html"><span class="ar-only">تهيئة المساحات</span><span class="fr-only">Aménagement</span></a></li>
+          <li><a href="services.html"><span class="ar-only">دهان وطلاء</span><span class="fr-only">Peinture</span></a></li>
+          <li><a href="services.html"><span class="ar-only">زليج وبلاط</span><span class="fr-only">Zellige</span></a></li>
+          <li><a href="services.html"><span class="ar-only">الأثاث والديكور</span><span class="fr-only">Ameublement</span></a></li>
+          <li><a href="devis.html"><span class="ar-only">طلب عرض سعر</span><span class="fr-only">Demander un devis</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5><span class="ar-only">تواصل</span><span class="fr-only">Contact</span></h5>
+        <div class="footer-ci"><div class="footer-ci-icon">&#x1F4F1;</div><div class="footer-ci-text">+212 662 193 210</div></div>
+        <div class="footer-ci"><div class="footer-ci-icon">&#x1F4CD;</div><div class="footer-ci-text"><span class="ar-only">المغرب</span><span class="fr-only">Maroc</span></div></div>
+        <div class="footer-ci"><div class="footer-ci-icon">&#x1F550;</div><div class="footer-ci-text"><span class="ar-only">الإثنين — السبت 8:00—18:00</span><span class="fr-only">Lun — Sam 8h—18h</span></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><span class="ar-only">© 2025 سلمان كولورز — جميع الحقوق محفوظة</span><span class="fr-only">© 2025 Salman Colors — Tous droits réservés</span></p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">&#x2191;</button>
+<script src="main.js"></script>
+<script>
+(function() {
+  const form = document.getElementById('devisForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name    = form.querySelector('[name="name"]')?.value || '';
+    const phone   = form.querySelector('[name="phone"]')?.value || '';
+    const city    = form.querySelector('[name="city"]')?.value || '';
+    const type    = form.querySelector('[name="type"]')?.value || '';
+    const surface = form.querySelector('[name="surface"]')?.value || '';
+    const budget  = form.querySelector('[name="budget"]')?.value || '';
+    const message = form.querySelector('[name="message"]')?.value || '';
+    const services = Array.from(form.querySelectorAll('[name="service"]:checked')).map(c => c.value).join(', ') || '-';
+    const lang = document.documentElement.lang;
+    let text;
+    if (lang === 'fr') {
+      text = `Bonjour Salman Colors 👋\n\n📋 *Demande de devis*\n\n👤 Nom: ${name}\n📞 Tél: ${phone}\n📍 Ville: ${city}\n\n🔧 Services: ${services}\n🏠 Type: ${type}\n📐 Superficie: ${surface} m²\n💰 Budget: ${budget}\n\n💬 Message: ${message || 'Aucun message'}`;
+    } else {
+      text = `السلام عليكم سلمان كولورز 👋\n\n📋 *طلب عرض سعر*\n\n👤 الاسم: ${name}\n📞 الهاتف: ${phone}\n📍 المدينة: ${city}\n\n🔧 الخدمات: ${services}\n🏠 نوع العقار: ${type}\n📐 المساحة: ${surface} م²\n💰 الميزانية: ${budget}\n\n💬 الرسالة: ${message || 'لا توجد رسالة'}`;
+    }
+    window.open('https://wa.me/212662193210?text=' + encodeURIComponent(text), '_blank');
+    setTimeout(function() {
+      form.style.display = 'none';
+      var ok = document.getElementById('devisSuccess');
+      if (ok) ok.style.display = 'flex';
+    }, 400);
+  });
+})();
+</script>
+</body>
+</html>

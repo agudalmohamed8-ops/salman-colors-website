@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Services — Salman Colors</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="services/service-page.css">
+<style>
+/* ── SERVICES LIST PAGE ─────────────────────── */
+.svlist-section {
+  padding: 88px 0 80px;
+  background: #fff;
+}
+.svlist-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.svlist-eyebrow {
+  display: block;
+  font-size: 0.7rem; font-weight: 900;
+  color: var(--primary); letter-spacing: 0.18em;
+  text-transform: uppercase; margin-bottom: 0.6rem;
+}
+.svlist-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 900; color: var(--dark); margin-bottom: 0.4rem;
+}
+.svlist-header p { font-size: 1rem; color: var(--text-light); }
+
+.svlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.sv-card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: 0 6px 28px rgba(0,0,0,0.06);
+  transition: transform 0.32s ease, box-shadow 0.32s ease;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.sv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(245,166,35,0.16);
+}
+.sv-card-img-wrap {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.sv-card-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: transform 0.55s ease;
+}
+.sv-card:hover .sv-card-img-wrap img { transform: scale(1.07); }
+
+.sv-card-badge {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.66rem; font-weight: 900;
+  letter-spacing: 0.1em;
+  padding: 0.22rem 0.72rem;
+  border-radius: 50px;
+  font-family: 'Playfair Display', serif;
+}
+html[dir="rtl"] .sv-card-badge { left: auto; right: 1rem; }
+
+.sv-card-body {
+  padding: 1.4rem 1.5rem 1.7rem;
+  display: flex; flex-direction: column; flex: 1;
+}
+.sv-card-title {
+  font-size: 1.12rem; font-weight: 900;
+  color: var(--dark); margin-bottom: 0.6rem; line-height: 1.3;
+}
+.sv-card-desc {
+  font-size: 0.88rem; color: var(--text-light);
+  line-height: 1.8; margin-bottom: 1.2rem; flex: 1;
+}
+.sv-card-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.82rem; font-weight: 800;
+  color: var(--dark);
+  background: #FFF3DC;
+  border: 1.5px solid var(--primary);
+  border-radius: 50px;
+  padding: 0.48rem 1.15rem;
+  transition: background 0.25s, color 0.25s;
+  align-self: flex-start;
+}
+.sv-card-btn:hover { background: var(--primary); color: #fff; }
+
+.sp-hero-sub {
+  color: rgba(255,255,255,0.68);
+  font-size: 1.05rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 960px) {
+  .svlist-grid { grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+  .svlist-section { padding: 64px 0 60px; }
+}
+@media (max-width: 580px) {
+  .svlist-grid { grid-template-columns: 1fr; }
+  .sv-card-img-wrap { height: 200px; }
+  .svlist-section { padding: 48px 0; }
+}
+</style>
+</head>
+<body class="sp-page">
+
+<nav id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.png" alt="Salman Color" class="navbar-logo" onerror="this.src='logo.svg'">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><span class="fr-only">Accueil</span><span class="ar-only">الرئيسية</span></a></li>
+      <li><a href="services.html" class="active"><span class="fr-only">Services</span><span class="ar-only">خدماتنا</span></a></li>
+      <li><a href="portfolio.html"><span class="fr-only">Réalisations</span><span class="ar-only">أعمالنا</span></a></li>
+      <li><a href="blog.html"><span class="fr-only">Blog</span><span class="ar-only">المدونة</span></a></li>
+      <li><a href="about.html"><span class="fr-only">À propos</span><span class="ar-only">من نحن</span></a></li>
+      <li><a href="contact.html"><span class="fr-only">Contact</span><span class="ar-only">اتصل بنا</span></a></li>
+    </ul>
+    <div class="navbar-right">
+      <div class="lang-switcher">
+        <span class="lang-label active" data-lang="fr">FR</span>
+        <button class="lang-toggle" aria-label="Switch language"><span class="lang-thumb"></span></button>
+        <span class="lang-label" data-lang="ar">AR</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="sp-hero">
+  <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=85" alt="Services Salman Colors" class="sp-hero-img">
+  <div class="sp-hero-overlay"></div>
+  <nav class="sp-breadcrumb">
+    <a href="index.html"><span class="fr-only">Accueil</span><span class="ar-only">الرئيسية</span></a>
+    <span>›</span>
+    <span class="fr-only">Services</span><span class="ar-only">خدماتنا</span>
+  </nav>
+  <div class="sp-hero-content">
+    <h1 class="sp-title">
+      <span class="fr-only">Nos Services</span>
+      <span class="ar-only">خدماتنا</span>
+    </h1>
+    <div class="sp-title-accent"></div>
+    <p class="sp-hero-sub">
+      <span class="fr-only">Service complet de A à Z — une seule équipe suffit</span>
+      <span class="ar-only">خدمة متكاملة من A إلى Z — فريق واحد يكفيك</span>
+    </p>
+  </div>
+</div>
+
+<!-- SERVICES GRID -->
+<section class="svlist-section">
+  <div class="container">
+    <div class="svlist-header" data-aos="fade-up">
+      <span class="svlist-eyebrow">
+        <span class="fr-only">Ce que nous faisons</span>
+        <span class="ar-only">ما نقدمه</span>
+      </span>
+      <h2>
+        <span class="fr-only">Tous nos services</span>
+        <span class="ar-only">جميع خدماتنا</span>
+      </h2>
+      <p>
+        <span class="fr-only">Des finitions professionnelles pour chaque espace de votre maison</span>
+        <span class="ar-only">تشطيبات احترافية لكل فضاء في منزلك</span>
+      </p>
+    </div>
+
+    <div class="svlist-grid" data-aos="fade-up" data-aos-delay="60">
+
+      <!-- 01 — Gros Œuvre -->
+      <a href="services/gros-oeuvre.html" class="sv-card">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Gros Oeuvre">
+          <span class="sv-card-badge">01</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-title">
+            <span class="fr-only">Gros Œuvre &amp; Rénovation</span>
+            <span class="ar-only">بناء وتجديد</span>
+          </div>
+          <p class="sv-card-desc">
+            <span class="fr-only">Construction, rénovation complète et travaux structurels. Des fondations aux finitions, nous gérons chaque étape.</span>
+            <span class="ar-only">البناء والتجديد الشامل وأشغال الهيكل. من الأساسات حتى التشطيبات، نتكفل بكل مرحلة.</span>
+          </p>
+          <span class="sv-card-btn">
+            <span class="fr-only">Découvrir →</span>
+            <span class="ar-only">اكتشف ←</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- 02 — Peinture -->
+      <a href="services/peinture.html" class="sv-card">
+        <div class="sv-card-img-wrap">
+          <img src="Peinture &amp; Finition.png.jpg" alt="Peinture" onerror="this.src='https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=800&q=80'">
+          <span class="sv-card-badge">02</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-title">
+            <span class="fr-only">Peinture &amp; Finition</span>
+            <span class="ar-only">صباغة وتشطيب</span>
+          </div>
+          <p class="sv-card-desc">
+            <span class="fr-only">Peinture intérieure et extérieure, tadelakt, enduits décoratifs. Des couleurs modernes qui transforment vos espaces.</span>
+            <span class="ar-only">صباغة داخلية وخارجية، طادلاكت، طلاء زخرفي. ألوان عصرية تحول فضاءاتك.</span>
+          </p>
+          <span class="sv-card-btn">
+            <span class="fr-only">Découvrir →</span>
+            <span class="ar-only">اكتشف ←</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- 03 — Zellige -->
+      <a href="services/zellige.html" class="sv-card">
+        <div class="sv-card-img-wrap">
+          <img src="zalije.jpg" alt="Zellige" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80'">
+          <span class="sv-card-badge">03</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-title">
+            <span class="fr-only">Zellige</span>
+            <span class="ar-only">زليج وكارو</span>
+          </div>
+          <p class="sv-card-desc">
+            <span class="fr-only">Zellige marocain authentique, carrelage moderne, revêtements murs et sols. Tradition et précision réunies.</span>
+            <span class="ar-only">زليج مغربي أصيل، بلاط عصري، تغطية جدران وأرضيات. التقليد والدقة معاً.</span>
+          </p>
+          <span class="sv-card-btn">
+            <span class="fr-only">Découvrir →</span>
+            <span class="ar-only">اكتشف ←</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- 04 — Menuiserie -->
+      <a href="services/menuiserie.html" class="sv-card">
+        <div class="sv-card-img-wrap">
+          <img src="Menuiserie &amp; Bois.jpg" alt="Menuiserie" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80'">
+          <span class="sv-card-badge">04</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-title">
+            <span class="fr-only">Menuiserie &amp; Bois</span>
+            <span class="ar-only">نجارة وخشب</span>
+          </div>
+          <p class="sv-card-desc">
+            <span class="fr-only">Portes, fenêtres, cuisines intégrées, dressings sur mesure. Le bois travaillé avec passion et précision.</span>
+            <span class="ar-only">أبواب، نوافذ، مطابخ مدمجة، دريسينغ حسب الطلب. الخشب بعناية ودقة.</span>
+          </p>
+          <span class="sv-card-btn">
+            <span class="fr-only">Découvrir →</span>
+            <span class="ar-only">اكتشف ←</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- 05 — Ameublement -->
+      <a href="services/ameublement.html" class="sv-card">
+        <div class="sv-card-img-wrap">
+          <img src="Ameublement &amp; Décoration.jpg" alt="Ameublement" onerror="this.src='https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80'">
+          <span class="sv-card-badge">05</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-title">
+            <span class="fr-only">Ameublement &amp; Décoration</span>
+            <span class="ar-only">فرش وديكور</span>
+          </div>
+          <p class="sv-card-desc">
+            <span class="fr-only">Mobilier complet, décoration intérieure, salon, chambre et cuisine. Votre maison clé en main.</span>
+            <span class="ar-only">فرش كامل، ديكور داخلي، صالون، غرفة ومطبخ. منزلك جاهز للتسليم.</span>
+          </p>
+          <span class="sv-card-btn">
+            <span class="fr-only">Découvrir →</span>
+            <span class="ar-only">اكتشف ←</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- 06 — Jardin -->
+      <a href="services/jardin.html" class="sv-card">
+        <div class="sv-card-img-wrap">
+          <img src="Jardin &amp; Extérieur.jpg" alt="Jardin" onerror="this.src='https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80'">
+          <span class="sv-card-badge">06</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-title">
+            <span class="fr-only">Jardin &amp; Extérieur</span>
+            <span class="ar-only">حديقة وخارج</span>
+          </div>
+          <p class="sv-card-desc">
+            <span class="fr-only">Aménagement paysager, terrasses, espaces verts et extérieurs. Votre jardin de rêve réalisé par des experts.</span>
+            <span class="ar-only">تنسيق المساحات الخضراء، تراسات، مناطق خارجية. حديقة أحلامك بأيدي خبراء.</span>
+          </p>
+          <span class="sv-card-btn">
+            <span class="fr-only">Découvrir →</span>
+            <span class="ar-only">اكتشف ←</span>
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="sp-cta-banner">
+  <div class="container" data-aos="fade-up">
+    <h2 class="sp-cta-banner-title">
+      <span class="fr-only">Prêt à démarrer votre projet ?</span>
+      <span class="ar-only">جاهز تبدا مشروعك؟</span>
+    </h2>
+    <p class="sp-cta-banner-sub">
+      <span class="fr-only">Contactez Salman Colors dès aujourd'hui — consultation gratuite sur WhatsApp.</span>
+      <span class="ar-only">تواصل مع سلمان كلورز اليوم — استشارة مجانية عبر واتساب.</span>
+    </p>
+    <a href="https://wa.me/212662193210?text=Bonjour%2C%20je%20voudrais%20un%20devis" target="_blank" class="sp-cta-banner-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="fr-only">📲 WhatsApp direct</span>
+      <span class="ar-only">📲 واتساب مباشر</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.svg" alt="Salman Colors" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="footer-logo-fallback" style="display:none;align-items:center;gap:.7rem;"><div class="logo-mark">S</div><span style="color:#fff;font-weight:800;">Salman Colors</span></div>
+        </div>
+        <p><span class="fr-only">Service de finition complet au Maroc — Peinture, Zellige, Ameublement et Aménagement.</span><span class="ar-only">خدمة تشطيب متكاملة بالمغرب — صباغة، زليج، فرش، وأمنجمون.</span></p>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/salmanecolors" target="_blank" rel="noopener" class="footer-social-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
+          <a href="https://www.instagram.com/salmancolor/" target="_blank" rel="noopener" class="footer-social-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram</a>
+          <a href="https://www.tiktok.com/@salman_color" target="_blank" rel="noopener" class="footer-social-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>TikTok</a>
+          <a href="https://wa.me/212662193210" target="_blank" rel="noopener" class="footer-social-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <h4><span class="fr-only">Liens rapides</span><span class="ar-only">روابط سريعة</span></h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><span class="fr-only">Accueil</span><span class="ar-only">الرئيسية</span></a></li>
+          <li><a href="services.html"><span class="fr-only">Services</span><span class="ar-only">خدماتنا</span></a></li>
+          <li><a href="portfolio.html"><span class="fr-only">Réalisations</span><span class="ar-only">أعمالنا</span></a></li>
+          <li><a href="blog.html"><span class="fr-only">Blog</span><span class="ar-only">المدونة</span></a></li>
+          <li><a href="about.html"><span class="fr-only">À propos</span><span class="ar-only">من نحن</span></a></li>
+          <li><a href="contact.html"><span class="fr-only">Contact</span><span class="ar-only">اتصل بنا</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><span class="fr-only">Nos services</span><span class="ar-only">خدماتنا</span></h4>
+        <ul class="footer-links">
+          <li><a href="services/gros-oeuvre.html"><span class="fr-only">Gros Œuvre</span><span class="ar-only">بناء وتجديد</span></a></li>
+          <li><a href="services/peinture.html"><span class="fr-only">Peinture</span><span class="ar-only">صباغة</span></a></li>
+          <li><a href="services/zellige.html"><span class="fr-only">Zellige</span><span class="ar-only">زليج</span></a></li>
+          <li><a href="services/menuiserie.html"><span class="fr-only">Menuiserie</span><span class="ar-only">نجارة</span></a></li>
+          <li><a href="services/ameublement.html"><span class="fr-only">Ameublement</span><span class="ar-only">فرش</span></a></li>
+          <li><a href="services/jardin.html"><span class="fr-only">Jardin</span><span class="ar-only">حديقة</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><span class="fr-only">Contact</span><span class="ar-only">تواصل معنا</span></h4>
+        <div class="footer-ci"><div class="footer-ci-icon">&#x1F4F1;</div><div class="footer-ci-text">+212 662 193 210</div></div>
+        <div class="footer-ci"><div class="footer-ci-icon">&#x1F4CD;</div><div class="footer-ci-text"><span class="fr-only">Maroc</span><span class="ar-only">المغرب</span></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&#169; 2025 Salman Colors</span>
+      <span><span class="fr-only">Fait avec &#10084; au Maroc</span><span class="ar-only">صُنع بـ &#10084; في المغرب</span></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/212662193210" target="_blank" rel="noopener" class="wa-float-orange" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>

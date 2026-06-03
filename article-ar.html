@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كيف تختار ألوان الطلاء المناسبة لمنزلك؟ — سلمان كلورز</title>
+  <meta name="description" content="دليل شامل لاختيار ألوان الطلاء المناسبة لكل غرفة في منزلك — نصائح من خبراء سلمان كلورز.">
+  <meta property="og:title" content="كيف تختار ألوان الطلاء المناسبة؟ — سلمان كلورز">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1562259949-e8e7689f0b9e?w=1200&q=80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ---- ARTICLE LAYOUT ---- */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+      align-items: start;
+      padding: 80px 0;
+    }
+    @media (max-width: 900px) { .article-layout { grid-template-columns: 1fr; } }
+
+    .article-body { min-width: 0; }
+
+    .article-hero-img {
+      width: 100%;
+      aspect-ratio: 16/7;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--gray-mid);
+    }
+    .article-meta span {
+      display: flex; align-items: center; gap: .4rem;
+      font-size: .88rem; color: var(--text-muted);
+    }
+    .article-meta .cat-tag {
+      background: var(--gold); color: var(--navy);
+      padding: .25rem .9rem; border-radius: 50px;
+      font-weight: 700; font-size: .8rem; color: var(--navy);
+    }
+
+    .article-title { font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--navy); margin-bottom: 1rem; line-height: 1.4; }
+
+    .article-lead {
+      font-size: 1.15rem;
+      color: #445;
+      line-height: 1.9;
+      border-right: 4px solid var(--gold);
+      padding-right: 1.25rem;
+      margin-bottom: 2.5rem;
+      font-weight: 500;
+    }
+
+    .article-content h2 {
+      font-size: 1.5rem; color: var(--navy);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: .6rem;
+      border-bottom: 2px solid var(--gold);
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .article-content h3 { font-size: 1.2rem; color: var(--navy-light); margin: 2rem 0 .75rem; }
+    .article-content p { font-size: 1rem; color: #445; line-height: 1.9; margin-bottom: 1.25rem; }
+    .article-content ul, .article-content ol {
+      margin: 1rem 0 1.5rem 0;
+      padding-right: 1.5rem;
+    }
+    .article-content li { font-size: .97rem; color: #445; line-height: 1.8; margin-bottom: .5rem; }
+    .article-content li::marker { color: var(--gold); font-weight: 900; }
+
+    .tip-box {
+      background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(201,168,76,.05));
+      border: 1.5px solid rgba(201,168,76,.35);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+      margin: 2rem 0;
+    }
+    .tip-box h4 { color: var(--gold-dark); margin-bottom: .6rem; font-size: 1rem; }
+    .tip-box p, .tip-box li { font-size: .92rem; margin: 0; }
+
+    .color-palette {
+      display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0;
+    }
+    .color-swatch {
+      display: flex; flex-direction: column; align-items: center; gap: .4rem;
+    }
+    .swatch {
+      width: 70px; height: 70px; border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .swatch-label { font-size: .75rem; color: #667; font-weight: 600; }
+
+    .article-img-mid {
+      width: 100%;
+      aspect-ratio: 16/8;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin: 2rem 0;
+      box-shadow: var(--shadow);
+    }
+
+    .article-share {
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+      padding: 1.5rem 0; border-top: 2px solid var(--gray-mid); margin-top: 3rem;
+    }
+    .article-share span { font-weight: 700; color: var(--navy); }
+    .share-btn {
+      padding: .5rem 1.2rem; border-radius: 50px;
+      font-size: .85rem; font-weight: 600;
+      display: inline-flex; align-items: center; gap: .4rem;
+      transition: var(--transition); text-decoration: none;
+    }
+    .share-btn:hover { transform: translateY(-2px); }
+    .share-wa { background: #25D366; color: #fff; }
+    .share-fb { background: #1877f2; color: #fff; }
+
+    /* SIDEBAR */
+    .sidebar { display: flex; flex-direction: column; gap: 1.5rem; position: sticky; top: 90px; }
+    .sidebar-widget {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border: 1.5px solid var(--gray-mid);
+    }
+    .sidebar-widget h4 {
+      color: var(--navy); margin-bottom: 1.25rem;
+      padding-bottom: .6rem; border-bottom: 2px solid var(--gold);
+      font-size: 1rem;
+    }
+    .recent-post { display: flex; gap: .75rem; margin-bottom: 1rem; align-items: flex-start; }
+    .recent-post:last-child { margin-bottom: 0; }
+    .recent-post img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+    .recent-post-info h5 { font-size: .85rem; color: var(--navy); margin-bottom: .2rem; line-height: 1.4; }
+    .recent-post-info span { font-size: .75rem; color: var(--text-muted); }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .tag {
+      padding: .3rem .85rem; border-radius: 50px;
+      background: var(--gray); color: var(--navy);
+      font-size: .78rem; font-weight: 600;
+      transition: var(--transition); cursor: default;
+    }
+    .tag:hover { background: var(--navy); color: var(--gold); }
+    .sidebar-cta {
+      background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      text-align: center;
+      color: var(--white);
+    }
+    .sidebar-cta h4 { color: var(--gold); margin-bottom: .6rem; }
+    .sidebar-cta p { color: rgba(255,255,255,.75); font-size: .85rem; margin-bottom: 1.25rem; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Salman Color" class="logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="logo-fallback"><div class="logo-icon">S</div><span class="logo-text">سلمان <span>كلورز</span></span></div>
+    </a>
+    <div class="navbar-controls">
+      <div class="lang-switcher">
+        <span class="lang-label" data-lang="fr">FR</span>
+        <button class="lang-toggle" aria-label="Switch language"><span class="lang-thumb"></span></button>
+        <span class="lang-label active" data-lang="ar">&#x639;</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><span class="ar-only">الرئيسية</span><span class="fr-only">Accueil</span></a></li>
+      <li><a href="services.html"><span class="ar-only">خدماتنا</span><span class="fr-only">Services</span></a></li>
+      <li><a href="portfolio.html"><span class="ar-only">أعمالنا</span><span class="fr-only">Réalisations</span></a></li>
+      <li><a href="blog.html" class="active"><span class="ar-only">المدونة</span><span class="fr-only">Blog</span></a></li>
+      <li><a href="about.html"><span class="ar-only">من نحن</span><span class="fr-only">À propos</span></a></li>
+      <li><a href="contact.html" class="nav-cta"><span class="ar-only">اتصل بنا</span><span class="fr-only">Contact</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div style="height:75px;"></div>
+
+<div class="container">
+  <!-- Breadcrumb -->
+  <div class="breadcrumb" style="padding:1.5rem 0 0;">
+    <a href="index.html">الرئيسية</a>
+    <span>/</span><a href="blog.html">المدونة</a>
+    <span>/</span><span>كيف تختار ألوان منزلك؟</span>
+  </div>
+
+  <div class="article-layout">
+
+    <!-- MAIN ARTICLE -->
+    <article class="article-body" data-aos>
+
+      <img class="article-hero-img"
+           src="https://images.unsplash.com/photo-1562259949-e8e7689f0b9e?w=1200&q=80"
+           alt="كيف تختار ألوان الطلاء المناسبة لمنزلك" loading="lazy">
+
+      <div class="article-meta">
+        <span class="cat-tag">🎨 الصباغة</span>
+        <span>📅 مايو 2024</span>
+        <span>⏱️ 5 دقائق قراءة</span>
+        <span>✍️ فريق سلمان كلورز</span>
+      </div>
+
+      <h1 class="article-title">كيف تختار ألوان الطلاء المناسبة لمنزلك؟ دليلٌ شاملٌ خطوةً بخطوة</h1>
+
+      <p class="article-lead">
+        الألوان ليست مجرد طبقة من الطلاء تُغطي الجدران — إنها روحٌ تسكن المكان وتؤثر في مزاجك وإحساسك كل يوم. اختيار اللون المناسب هو فنٌّ يجمع بين الذوق الشخصي وقواعد علم الألوان والضوء الطبيعي لكل فضاء.
+      </p>
+
+      <div class="article-content">
+
+        <h2>🌈 أولاً: افهم عجلة الألوان</h2>
+        <p>قبل أن تقف أمام رفوف الطلاء في محل البناء مذهولاً من مئات الخيارات، عليك أن تفهم المبادئ الأساسية لعجلة الألوان. تنقسم الألوان إلى ثلاث فئات رئيسية:</p>
+        <ul>
+          <li><strong>الألوان الدافئة:</strong> الأحمر والبرتقالي والأصفر — تُضفي دفئاً وحيوية على الفضاء.</li>
+          <li><strong>الألوان الباردة:</strong> الأزرق والأخضر والبنفسجي — تمنح الهدوء والاتساع البصري.</li>
+          <li><strong>الألوان المحايدة:</strong> الأبيض والرمادي والبيج — أساس التناسق في أي ديكور.</li>
+        </ul>
+        <p>الخطوة الأولى هي تحديد المزاج الذي تريد إيجاده في الغرفة: هل تريدها مريحة وهادئة؟ نابضة بالحيوية؟ أم أنيقة وراقية؟</p>
+
+        <h2 id="zalij">🏠 ثانياً: الضوء الطبيعي هو الحَكَم الأول</h2>
+        <p>اللون الذي يبدو جميلاً على البطاقة في المحل قد يبدو مختلفاً تماماً حين يُطبَّق على جدران غرفتك. السبب هو الضوء. الضوء الطبيعي يغير خصائص اللون بحسب:</p>
+        <ul>
+          <li><strong>اتجاه النافذة:</strong> الغرف المطلة على الشمال تحصل على ضوء بارد أكثر، فتستحسن الألوان الدافئة فيها.</li>
+          <li><strong>توقيت اليوم:</strong> الضوء في الصباح مختلف تماماً عن ضوء المساء.</li>
+          <li><strong>مساحة الغرفة:</strong> الغرف الصغيرة تزداد اتساعاً بالألوان الفاتحة.</li>
+        </ul>
+
+        <div class="tip-box">
+          <h4>💡 نصيحة الخبراء</h4>
+          <p>اشترِ عيّنات صغيرة من الألوان المرشحة وطبّقها على قطعة كبيرة من الورق المقوى. ضعها على جدران الغرفة المختلفة وراقبها في أوقات متعددة من اليوم (صباحاً، ظهراً، ومساءً) قبل اتخاذ قرارك النهائي.</p>
+        </div>
+
+        <h2>🎨 ثالثاً: لوحة ألوان مقترحة لكل غرفة</h2>
+
+        <h3>الصالون والمعيش</h3>
+        <p>الصالون هو قلب البيت، المكان الذي تستقبل فيه ضيوفك وتقضي فيه أوقات الراحة. يُنصح هنا باختيار ألوان محايدة دافئة كقاعدة، مع لمسة لون واحدة قوية في جدار واحد أو في الديكور.</p>
+        <div class="color-palette">
+          <div class="color-swatch">
+            <div class="swatch" style="background:#F5E6D3;"></div>
+            <span class="swatch-label">بيج دافئ</span>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch" style="background:#C9A84C;"></div>
+            <span class="swatch-label">ذهبي</span>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch" style="background:#1a1a2e;"></div>
+            <span class="swatch-label">أزرق داكن</span>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch" style="background:#8B6355;"></div>
+            <span class="swatch-label">بني رملي</span>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch" style="background:#F0EBE3;"></div>
+            <span class="swatch-label">كريمي</span>
+          </div>
+        </div>
+
+        <h3>غرفة النوم</h3>
+        <p>غرفة النوم يجب أن تستحثّ الراحة وتُهيئ للنوم العميق. اختر ألواناً هادئة مُشبعة بنسبة بسيطة من الرمادي أو الأزرق الباهت أو الأخضر الحكي. تجنب الألوان الصارخة كالأحمر الفاقع أو الأصفر القوي.</p>
+
+        <h3 id="bedroom">المطبخ</h3>
+        <p>المطبخ يحتاج إلى طاقة وحيوية. الألوان الدافئة كالكريمي والأصفر الباهت والأخضر الزيتوني تعطي جواً مبهجاً وتفتح الشهية. مع ضرورة الحرص على استخدام طلاء قابل للغسيل.</p>
+
+        <img class="article-img-mid"
+             src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1000&q=80"
+             alt="غرفة نوم بألوان هادئة" loading="lazy">
+
+        <h2 id="mobilier">🔵 رابعاً: قاعدة 60-30-10 الذهبية</h2>
+        <p>هذه القاعدة هي سر الغرف الجميلة المتوازنة. تقوم على توزيع الألوان كما يلي:</p>
+        <ul>
+          <li><strong>60%</strong> للون السائد (عادةً لون الجدران والسقف) — اللون الأساسي الهادئ.</li>
+          <li><strong>30%</strong> للون الثانوي (الأثاث، الستائر، السجاد) — يُضفي التنويع والعمق.</li>
+          <li><strong>10%</strong> للون التأكيد (الوسائد، اللوحات، الإكسسوارات) — نقطة الجذب البصري.</li>
+        </ul>
+
+        <div class="tip-box">
+          <h4>✅ مثال تطبيقي</h4>
+          <p>جدران بيج كريمي (60%) + أثاث بني غامق (30%) + وسائد ذهبية وإكسسوارات نحاسية (10%) = غرفة متناسقة وراقية بامتياز.</p>
+        </div>
+
+        <h2>⚠️ خامساً: أخطاء شائعة تجنّبها</h2>
+        <ul>
+          <li>اختيار اللون من الشاشة فقط دون رؤية العينة الحقيقية.</li>
+          <li>إهمال لون السقف — السقف الأبيض البارد يُناقض جدراناً دافئة.</li>
+          <li>رسم كل الجدران بنفس اللون دون أي كسر أو تناقض بصري.</li>
+          <li>اختيار ألوان كثيرة جداً في غرفة واحدة — أكثر من ثلاثة ألوان يُشعر بالفوضى.</li>
+          <li>عدم مراعاة لون الأثاث والأرضية الموجودة.</li>
+        </ul>
+
+        <h2>🏆 خاتمة: الألوان المناسبة مع الحرفية المناسبة</h2>
+        <p>اختيار اللون نصف العمل، والنصف الآخر هو جودة التطبيق. أفضل الألوان تفقد بريقها مع طلاء سيئ التطبيق. لهذا نحن في <strong>سلمان كلورز</strong> نهتم بكلا الجانبين — نساعدك على اختيار اللون الأنسب لبيتك، ثم نطبّقه بمهارة وحرفية تجعل النتيجة أفضل من توقعاتك.</p>
+        <p>تواصل معنا اليوم للحصول على استشارة مجانية في الألوان واختيار طلاء بيتك المثالي.</p>
+
+        <!-- Share -->
+        <div class="article-share">
+          <span>شارك المقال:</span>
+          <a href="https://wa.me/?text=مقال%20مفيد%20جداً%20من%20سلمان%20كلورز%20حول%20اختيار%20ألوان%20البيت%20🎨%20https://salmancolors.ma/article-ar.html" target="_blank" rel="noopener" class="share-btn share-wa">
+            💬 واتساب
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://salmancolors.ma/article-ar.html" target="_blank" rel="noopener" class="share-btn share-fb">
+            📘 Facebook
+          </a>
+          <a href="contact.html" class="share-btn" style="background:var(--gold);color:var(--navy);">
+            🏠 احجز استشارة مجانية
+          </a>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-cta">
+        <h4>🏠 ابدأ مشروعك اليوم</h4>
+        <p>استشارة مجانية في اختيار ألوان بيتك مع فريق سلمان كلورز</p>
+        <a href="https://wa.me/212662193210?text=السلام%20عليكم%2C%20بغيت%20استشارة%20مجانية%20في%20ألوان%20الصباغة%20🎨" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;justify-content:center;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          تواصل معنا
+        </a>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>📰 مقالات أخرى</h4>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=100&q=70" alt="الزليج" loading="lazy">
+          <div class="recent-post-info">
+            <h5>الزليج المغربي: فن يروي تاريخاً وحضارة</h5>
+            <span>🇲🇦 عربية</span>
+          </div>
+        </div>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=100&q=70" alt="Tendances 2024" loading="lazy">
+          <div class="recent-post-info">
+            <h5>5 Tendances Déco à Adopter en 2024</h5>
+            <span>🇫🇷 Français</span>
+          </div>
+        </div>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=100&q=70" alt="الفرش" loading="lazy">
+          <div class="recent-post-info">
+            <h5>نصائح ذهبية لتأثيث المنازل الصغيرة</h5>
+            <span>🇲🇦 عربية</span>
+          </div>
+        </div>
+        <a href="blog.html" class="btn btn-navy" style="width:100%;justify-content:center;margin-top:1rem;">كل المقالات</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>🏷️ المواضيع</h4>
+        <div class="tag-cloud">
+          <span class="tag">الصباغة</span>
+          <span class="tag">الزليج</span>
+          <span class="tag">الفرش</span>
+          <span class="tag">الألوان</span>
+          <span class="tag">ديكور</span>
+          <span class="tag">نصائح</span>
+          <span class="tag">Peinture</span>
+          <span class="tag">Zellige</span>
+          <span class="tag">Déco</span>
+        </div>
+      </div>
+
+      <div class="sidebar-widget" style="text-align:center;">
+        <h4>تابعنا</h4>
+        <div style="display:flex;justify-content:center;gap:.6rem;margin-top:.5rem;">
+          <a href="https://www.facebook.com/salmanecolors" target="_blank" rel="noopener" class="footer-social-icon" style="background:var(--navy);">📘</a>
+          <a href="https://www.instagram.com/salmancolor/" target="_blank" rel="noopener" class="footer-social-icon" style="background:var(--navy);">📷</a>
+          <a href="https://www.tiktok.com/@salman_color" target="_blank" rel="noopener" class="footer-social-icon" style="background:var(--navy);">🎵</a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:0.75rem;display:block;">
+          <img src="logo.svg" alt="Salman Colors" class="footer-logo-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-fallback"><div class="logo-icon">S</div><span class="logo-text" style="color:#fff;">سلمان <span>كلورز</span></span></div>
+        </a>
+        <p>خدمة تشطيب متكاملة من A إلى Z بالمغرب.</p>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/salmanecolors" target="_blank" rel="noopener" class="footer-social-icon" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/salmancolor/" target="_blank" rel="noopener" class="footer-social-icon" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@salman_color" target="_blank" rel="noopener" class="footer-social-icon" title="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>
+            TikTok
+          </a>
+          <a href="https://www.youtube.com/@salmancolor" target="_blank" rel="noopener" class="footer-social-icon" title="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            YouTube
+          </a>
+          <a href="https://wa.me/212662193210" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="portfolio.html">أعمالنا</a></li>
+          <li><a href="blog.html">المدونة</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>خدماتنا</h4>
+        <ul>
+          <li><a href="services.html#sbagh">الصباغة</a></li>
+          <li><a href="services.html#amenagement">Aménagement</a></li>
+          <li><a href="services.html#zalij">الزليج</a></li>
+          <li><a href="services.html#lafrax">الفرش</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <div class="footer-contact-item"><span>📱</span><div>+212 662 193 210</div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 سلمان كلورز</span>
+      <span>صُنع بـ ❤️ في المغرب</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/212662193210?text=السلام%20عليكم" target="_blank" rel="noopener" class="whatsapp-float" aria-label="واتساب">
+  <div class="whatsapp-pulse"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-label">واتساب مباشر</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+

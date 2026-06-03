@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Tendances Déco à Adopter en 2024 — Salman Colors</title>
+  <meta name="description" content="Découvrez les 5 grandes tendances décoration intérieure 2024 au Maroc selon les experts Salman Colors — couleurs, matières, zellige et plus.">
+  <meta property="og:title" content="5 Tendances Déco 2024 — Salman Colors">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ---- ARTICLE FR (LTR) ---- */
+    body { direction: ltr; text-align: left; }
+    .navbar-inner { flex-direction: row-reverse; }
+    .nav-links { flex-direction: row; }
+    .logo { flex-direction: row-reverse; }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 3rem;
+      align-items: start;
+      padding: 80px 0;
+    }
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+    }
+
+    .article-hero-img {
+      width: 100%; aspect-ratio: 16/7;
+      object-fit: cover; border-radius: var(--radius-lg);
+      margin-bottom: 2.5rem; box-shadow: var(--shadow);
+    }
+    .article-meta {
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      margin-bottom: 2rem; padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--gray-mid);
+    }
+    .article-meta span { display: flex; align-items: center; gap: .4rem; font-size: .88rem; color: var(--text-muted); }
+    .cat-tag { background: var(--gold); color: var(--navy); padding: .25rem .9rem; border-radius: 50px; font-weight: 700; font-size: .8rem; }
+    .article-title { font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--navy); margin-bottom: 1rem; line-height: 1.4; }
+    .article-lead {
+      font-size: 1.1rem; color: #445; line-height: 1.9;
+      border-left: 4px solid var(--gold); padding-left: 1.25rem;
+      margin-bottom: 2.5rem; font-weight: 500;
+    }
+
+    .article-content h2 {
+      font-size: 1.45rem; color: var(--navy);
+      margin: 2.5rem 0 1rem; padding-bottom: .6rem;
+      border-bottom: 2px solid var(--gold);
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .article-content h3 { font-size: 1.15rem; color: var(--navy-light); margin: 1.75rem 0 .75rem; }
+    .article-content p { font-size: 1rem; color: #445; line-height: 1.9; margin-bottom: 1.25rem; }
+    .article-content ul, .article-content ol { margin: 1rem 0 1.5rem; padding-left: 1.5rem; }
+    .article-content li { font-size: .97rem; color: #445; line-height: 1.8; margin-bottom: .5rem; }
+    .article-content li::marker { color: var(--gold); font-weight: 900; }
+
+    .trend-card {
+      background: linear-gradient(135deg, var(--off-white), var(--white));
+      border: 1.5px solid var(--gray-mid);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 5px solid var(--gold);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .trend-number {
+      font-size: 3rem; font-weight: 900;
+      color: var(--gold); line-height: 1;
+      opacity: .6;
+    }
+    .trend-card h3 { margin-top: 0; font-size: 1.2rem; color: var(--navy); margin-bottom: .6rem; }
+    .trend-card p { font-size: .92rem; margin: 0; }
+
+    .tip-box {
+      background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(201,168,76,.04));
+      border: 1.5px solid rgba(201,168,76,.35);
+      border-radius: var(--radius); padding: 1.5rem; margin: 2rem 0;
+    }
+    .tip-box h4 { color: var(--gold-dark); margin-bottom: .6rem; font-size: 1rem; }
+
+    .article-img-mid {
+      width: 100%; aspect-ratio: 16/8; object-fit: cover;
+      border-radius: var(--radius); margin: 2rem 0; box-shadow: var(--shadow);
+    }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+    .comparison-table th { background: var(--navy); color: var(--gold); padding: .85rem 1rem; text-align: left; }
+    .comparison-table td { padding: .75rem 1rem; border-bottom: 1px solid var(--gray-mid); }
+    .comparison-table tr:nth-child(even) td { background: var(--off-white); }
+    .comparison-table .yes { color: #2e7d32; font-weight: 700; }
+    .comparison-table .no  { color: #c62828; font-weight: 700; }
+
+    .article-share {
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+      padding: 1.5rem 0; border-top: 2px solid var(--gray-mid); margin-top: 3rem;
+    }
+    .share-btn {
+      padding: .5rem 1.2rem; border-radius: 50px; font-size: .85rem;
+      font-weight: 600; display: inline-flex; align-items: center; gap: .4rem;
+      transition: var(--transition); text-decoration: none;
+    }
+    .share-btn:hover { transform: translateY(-2px); }
+    .share-wa { background: #25D366; color: #fff; }
+    .share-fb { background: #1877f2; color: #fff; }
+
+    /* Sidebar */
+    .sidebar { display: flex; flex-direction: column; gap: 1.5rem; position: sticky; top: 90px; }
+    .sidebar-widget { background: var(--white); border-radius: var(--radius-lg); padding: 1.5rem; border: 1.5px solid var(--gray-mid); }
+    .sidebar-widget h4 { color: var(--navy); margin-bottom: 1.25rem; padding-bottom: .6rem; border-bottom: 2px solid var(--gold); font-size: 1rem; }
+    .recent-post { display: flex; gap: .75rem; margin-bottom: 1rem; align-items: flex-start; }
+    .recent-post:last-child { margin-bottom: 0; }
+    .recent-post img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+    .recent-post-info h5 { font-size: .85rem; color: var(--navy); margin-bottom: .2rem; line-height: 1.4; }
+    .recent-post-info span { font-size: .75rem; color: var(--text-muted); }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .tag { padding: .3rem .85rem; border-radius: 50px; background: var(--gray); color: var(--navy); font-size: .78rem; font-weight: 600; transition: var(--transition); }
+    .tag:hover { background: var(--navy); color: var(--gold); }
+    .sidebar-cta { background: linear-gradient(135deg, var(--navy), var(--navy-mid)); border-radius: var(--radius-lg); padding: 1.75rem; text-align: center; }
+    .sidebar-cta h4 { color: var(--gold); margin-bottom: .6rem; }
+    .sidebar-cta p { color: rgba(255,255,255,.75); font-size: .85rem; margin-bottom: 1.25rem; }
+
+    /* Footer override for LTR */
+    .footer { direction: rtl; text-align: right; }
+    .whatsapp-float { left: 2rem; right: auto; }
+    @media (max-width: 768px) { .whatsapp-float { left: 1rem; } }
+
+    /* Breadcrumb LTR */
+    .breadcrumb { direction: ltr; justify-content: flex-start; }
+
+    @media (max-width: 768px) {
+      .trend-card { grid-template-columns: 1fr; }
+      .trend-number { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Salman Color" class="logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="logo-fallback"><div class="logo-icon">S</div><span class="logo-text">سلمان <span>كلورز</span></span></div>
+    </a>
+    <div class="navbar-controls">
+      <div class="lang-switcher">
+        <span class="lang-label" data-lang="fr">FR</span>
+        <button class="lang-toggle" aria-label="Switch language"><span class="lang-thumb"></span></button>
+        <span class="lang-label active" data-lang="ar">&#x639;</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><span class="ar-only">الرئيسية</span><span class="fr-only">Accueil</span></a></li>
+      <li><a href="services.html"><span class="ar-only">خدماتنا</span><span class="fr-only">Services</span></a></li>
+      <li><a href="portfolio.html"><span class="ar-only">أعمالنا</span><span class="fr-only">Réalisations</span></a></li>
+      <li><a href="blog.html" class="active"><span class="ar-only">المدونة</span><span class="fr-only">Blog</span></a></li>
+      <li><a href="about.html"><span class="ar-only">من نحن</span><span class="fr-only">À propos</span></a></li>
+      <li><a href="contact.html" class="nav-cta"><span class="ar-only">اتصل بنا</span><span class="fr-only">Contact</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div style="height:75px;"></div>
+
+<div class="container">
+  <div class="breadcrumb" style="padding:1.5rem 0 0;">
+    <a href="index.html">Accueil</a>
+    <span>/</span><a href="blog.html">Blog</a>
+    <span>/</span><span>5 Tendances Déco 2024</span>
+  </div>
+
+  <div class="article-layout">
+
+    <!-- SIDEBAR LEFT -->
+    <aside class="sidebar">
+
+      <div class="sidebar-cta">
+        <h4>🏠 Démarrez votre projet</h4>
+        <p>Consultation gratuite avec l'équipe Salman Colors pour votre rénovation</p>
+        <a href="https://wa.me/212662193210?text=Bonjour%2C%20je%20souhaite%20une%20consultation%20gratuite%20pour%20mon%20projet%20de%20décoration%20🏠" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;justify-content:center;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Nous contacter
+        </a>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>📰 Articles récents</h4>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1562259949-e8e7689f0b9e?w=100&q=70" alt="Peinture">
+          <div class="recent-post-info">
+            <h5>كيف تختار ألوان منزلك؟</h5>
+            <span>🇲🇦 Arabe</span>
+          </div>
+        </div>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=100&q=70" alt="Zellige">
+          <div class="recent-post-info">
+            <h5>Le Zellige Marocain : Art et Histoire</h5>
+            <span>🇫🇷 Français</span>
+          </div>
+        </div>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=100&q=70" alt="Cuisine">
+          <div class="recent-post-info">
+            <h5>Réussir l'aménagement de votre cuisine</h5>
+            <span>🇫🇷 Français</span>
+          </div>
+        </div>
+        <a href="blog.html" class="btn btn-navy" style="width:100%;justify-content:center;margin-top:1rem;">Tous les articles</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>🏷️ Tags</h4>
+        <div class="tag-cloud">
+          <span class="tag">Peinture</span>
+          <span class="tag">Zellige</span>
+          <span class="tag">Déco</span>
+          <span class="tag">Tendances</span>
+          <span class="tag">Aménagement</span>
+          <span class="tag">Couleurs</span>
+          <span class="tag">الصباغة</span>
+          <span class="tag">الزليج</span>
+        </div>
+      </div>
+
+      <div class="sidebar-widget" style="text-align:center;">
+        <h4>Suivez-nous</h4>
+        <div style="display:flex;justify-content:center;gap:.6rem;margin-top:.5rem;">
+          <a href="https://www.facebook.com/salmanecolors" target="_blank" rel="noopener" class="footer-social-icon" style="background:var(--navy);">📘</a>
+          <a href="https://www.instagram.com/salmancolor/" target="_blank" rel="noopener" class="footer-social-icon" style="background:var(--navy);">📷</a>
+          <a href="https://www.tiktok.com/@salman_color" target="_blank" rel="noopener" class="footer-social-icon" style="background:var(--navy);">🎵</a>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- MAIN ARTICLE -->
+    <article class="article-body" data-aos>
+
+      <img class="article-hero-img"
+           src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80"
+           alt="Tendances déco 2024" loading="lazy">
+
+      <div class="article-meta">
+        <span class="cat-tag">🎨 Tendances</span>
+        <span>📅 Avril 2024</span>
+        <span>⏱️ 5 min de lecture</span>
+        <span>✍️ Équipe Salman Colors</span>
+      </div>
+
+      <h1 class="article-title">5 Tendances Décoration à Adopter Absolument en 2024</h1>
+
+      <p class="article-lead">
+        La décoration intérieure évolue chaque année. En 2024, on assiste à un retour aux matières naturelles, aux teintes apaisantes et à une fusion unique entre le patrimoine marocain et la modernité. Voici les 5 grandes tendances à intégrer dans votre intérieur cette année.
+      </p>
+
+      <div class="article-content">
+
+        <!-- TREND 1 -->
+        <div class="trend-card" data-aos>
+          <span class="trend-number">01</span>
+          <div>
+            <h3>Le Retour des Matières Naturelles</h3>
+            <p>Le béton, le bois brut, la pierre et le liège sont en plein renouveau. Ces matériaux apportent chaleur et authenticité à l'espace, tout en s'inscrivant dans une démarche éco-responsable. Au Maroc, ce mouvement se conjugue parfaitement avec le <strong>tadelakt</strong>, ce plâtre marocain imperméable au lustre soyeux, idéal pour les salles de bain et les murs intérieurs.</p>
+          </div>
+        </div>
+
+        <!-- TREND 2 -->
+        <div class="trend-card" data-aos>
+          <span class="trend-number">02</span>
+          <div>
+            <h3>Les Teintes Terreuses et Chaleureuses</h3>
+            <p>Fini les blancs cliniques et les gris froids. En 2024, les palettes s'inspirent de la terre, des épices et du désert : <strong>terracotta, ocre, caramel, vert sauge, brun cannelle</strong>. Ces couleurs créent des atmosphères cocooning et favorisent la détente. Elles s'harmonisent parfaitement avec les zellijes aux motifs géométriques et les meubles en bois foncé.</p>
+          </div>
+        </div>
+
+        <img class="article-img-mid"
+             src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1000&q=80"
+             alt="Zellige marocain tendance 2024" loading="lazy">
+
+        <!-- TREND 3 -->
+        <div class="trend-card" data-aos id="zellige">
+          <span class="trend-number">03</span>
+          <div>
+            <h3>Le Zellige Marocain : Star de la Déco Mondiale</h3>
+            <p>Ce n'est plus un secret : le <strong>zellige marocain</strong> est au sommet de sa gloire internationale. Des intérieurs de Londres à New York en passant par Paris, les carreaux artisanaux marocains ornent cuisines, salles de bain et salons avec leur irrégularité caractéristique et leur brillance incomparable.</p>
+            <p>En 2024, les compositions géométriques complexes, les motifs <em>Fassi</em> et les mélanges de couleurs audacieux (cobalt + blanc + miel) sont particulièrement en vogue.</p>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <h4>💡 Le saviez-vous ?</h4>
+          <p>Contrairement aux carreaux industriels, chaque pièce de zellige est taillée et émaillée à la main. Cette irrégularité, loin d'être un défaut, est précisément ce qui lui confère son charme unique et son âme.</p>
+        </div>
+
+        <!-- Comparison table -->
+        <h2 id="cuisine">⚖️ Zellige Artisanal vs Carrelage Industriel : Le Comparatif</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Critère</th>
+              <th>Zellige Marocain</th>
+              <th>Carrelage Industriel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Caractère unique</td>
+              <td class="yes">✓ Chaque pièce est unique</td>
+              <td class="no">✗ Répétition industrielle</td>
+            </tr>
+            <tr>
+              <td>Durabilité</td>
+              <td class="yes">✓ Siècles (patrimoine UNESCO)</td>
+              <td>Variable selon qualité</td>
+            </tr>
+            <tr>
+              <td>Prix</td>
+              <td>Moyen-haut</td>
+              <td class="yes">✓ Accessible</td>
+            </tr>
+            <tr>
+              <td>Entretien</td>
+              <td>Simple (séré régulier)</td>
+              <td class="yes">✓ Facile</td>
+            </tr>
+            <tr>
+              <td>Valeur ajoutée</td>
+              <td class="yes">✓ Très élevée</td>
+              <td>Modérée</td>
+            </tr>
+            <tr>
+              <td>Impact déco</td>
+              <td class="yes">✓ Exceptionnel</td>
+              <td>Correct</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- TREND 4 -->
+        <div class="trend-card" data-aos>
+          <span class="trend-number">04</span>
+          <div>
+            <h3>L'Espace Épuré et le "Minimalisme Chaud"</h3>
+            <p>Le maximalisme recule au profit d'un minimalisme repensé, plus doux et humain. On ne parle plus de vider les espaces, mais de les <strong>désencombrer intelligemment</strong> : moins de meubles, mais de meilleure qualité ; moins d'objets, mais chacun porteur de sens et d'histoire. Les maisons marocaines, naturellement organisées autour de patio et de patios, s'y prêtent admirablement.</p>
+          </div>
+        </div>
+
+        <!-- TREND 5 -->
+        <div class="trend-card" data-aos>
+          <span class="trend-number">05</span>
+          <div>
+            <h3>L'Éclairage Architectural comme Élément Déco</h3>
+            <p>En 2024, l'éclairage n'est plus un simple accessoire — c'est un <strong>matériau de décoration à part entière</strong>. Les spots encastrés cèdent la place aux suspensions artisanales, aux lampes Berber tressées, aux jeux d'ombre et de lumière créés par des moucharabiehs ou des claustrums en béton. L'éclairage indirect chaud (2700-3000K) crée des ambiances cocooning particulièrement appréciées dans les salons marocains.</p>
+          </div>
+        </div>
+
+        <img class="article-img-mid"
+             src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1000&q=80"
+             alt="Salon marocain tendance 2024" loading="lazy">
+
+        <h2>🏆 Comment Appliquer Ces Tendances ?</h2>
+        <p>Adopter ces tendances ne signifie pas tout refaire de zéro. Voici une approche progressive :</p>
+        <ol>
+          <li><strong>Commencez par les couleurs :</strong> Un pot de peinture dans une teinte terreuse peut transformer une pièce en une journée.</li>
+          <li><strong>Ajoutez une touche de zellige :</strong> Même un revêtement partiel (crédence de cuisine, bas de mur de salle de bain) suffit à changer l'ambiance.</li>
+          <li><strong>Investissez dans l'éclairage :</strong> Remplacez vos ampoules blanches froides par des ampoules Edison chaleureuses.</li>
+          <li><strong>Intégrez des matières naturelles :</strong> Un tapis en laine, des coussins en lin, un plateau en bois d'olivier font toute la différence.</li>
+          <li><strong>Désencombrez :</strong> Retirez 30% de vos objets décoratifs — vous serez surpris du résultat.</li>
+        </ol>
+
+        <div class="tip-box">
+          <h4>✅ Notre Conseil Salman Colors</h4>
+          <p>Pour un résultat professionnel et cohérent, faites appel à notre équipe. Nous vous accompagnons de la conception à la réalisation : choix des couleurs, pose de zellige, aménagement et ameublement. Une consultation gratuite suffit pour évaluer votre projet et vous donner un devis sans engagement.</p>
+        </div>
+
+        <h2>🔑 Conclusion</h2>
+        <p>2024 est une année qui célèbre l'authenticité, le confort et la beauté intemporelle. Le Maroc, avec son riche patrimoine artisanal, est idéalement positionné pour être à l'avant-garde de ces tendances mondiales. Chez <strong>Salman Colors</strong>, nous puisons dans ce patrimoine pour créer des intérieurs qui vous ressemblent — chaleureux, raffinés et durables.</p>
+        <p>Contactez-nous aujourd'hui pour donner vie à votre projet de décoration.</p>
+
+        <!-- Share -->
+        <div class="article-share">
+          <span style="font-weight:700;color:var(--navy);">Partager :</span>
+          <a href="https://wa.me/?text=Article%20très%20utile%20de%20Salman%20Colors%20sur%20les%20tendances%20déco%202024%20🏠%20https://salmancolors.ma/article-fr.html" target="_blank" rel="noopener" class="share-btn share-wa">
+            💬 WhatsApp
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://salmancolors.ma/article-fr.html" target="_blank" rel="noopener" class="share-btn share-fb">
+            📘 Facebook
+          </a>
+          <a href="contact.html" class="share-btn" style="background:var(--gold);color:var(--navy);">
+            🏠 Consultation gratuite
+          </a>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" style="direction:rtl;text-align:right;">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:0.75rem;display:block;">
+          <img src="logo.svg" alt="Salman Colors" class="footer-logo-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-fallback"><div class="logo-icon">S</div><span class="logo-text" style="color:#fff;">سلمان <span>كلورز</span></span></div>
+        </a>
+        <p>خدمة تشطيب متكاملة من A إلى Z بالمغرب.</p>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/salmanecolors" target="_blank" rel="noopener" class="footer-social-icon" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/salmancolor/" target="_blank" rel="noopener" class="footer-social-icon" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@salman_color" target="_blank" rel="noopener" class="footer-social-icon" title="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>
+            TikTok
+          </a>
+          <a href="https://www.youtube.com/@salmancolor" target="_blank" rel="noopener" class="footer-social-icon" title="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            YouTube
+          </a>
+          <a href="https://wa.me/212662193210" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="portfolio.html">أعمالنا</a></li>
+          <li><a href="blog.html">المدونة</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Articles du Blog</h4>
+        <ul>
+          <li><a href="article-ar.html" style="direction:rtl;">ألوان الطلاء المناسبة</a></li>
+          <li><a href="article-fr.html" style="direction:ltr;">5 Tendances 2024</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <div class="footer-contact-item"><span>📱</span><div>+212 662 193 210</div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 سلمان كلورز</span>
+      <span>صُنع بـ ❤️ في المغرب</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/212662193210?text=Bonjour" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp" style="left:2rem;right:auto;">
+  <div class="whatsapp-pulse"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-label">WhatsApp</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+

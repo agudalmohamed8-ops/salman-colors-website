@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title-ar" content="سلمان كلورز — تشطيب منازل بالمغرب">
+<meta name="title-fr" content="Salman Colors — Finition Maison au Maroc">
+<title>سلمان كلورز — تشطيب منازل بالمغرب</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.png" alt="Salman Color" class="navbar-logo" onerror="this.src='logo.svg'">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active"><span class="ar-only">الرئيسية</span><span class="fr-only">Accueil</span></a></li>
+      <li><a href="services.html"><span class="ar-only">خدماتنا</span><span class="fr-only">Services</span></a></li>
+      <li><a href="portfolio.html"><span class="ar-only">أعمالنا</span><span class="fr-only">Réalisations</span></a></li><li><a href="blog.html"><span class="ar-only">المدونة</span><span class="fr-only">Blog</span></a></li>
+      <li><a href="about.html"><span class="ar-only">من نحن</span><span class="fr-only">À propos</span></a></li>
+      <li><a href="contact.html"><span class="ar-only">اتصل بنا</span><span class="fr-only">Contact</span></a></li>
+    </ul>
+    <div class="navbar-right">
+      <div class="lang-switcher">
+        <span class="lang-label active" data-lang="fr">FR</span>
+        <button class="lang-toggle" aria-label="Switch language"><span class="lang-thumb"></span></button>
+        <span class="lang-label" data-lang="ar">AR</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <!-- dark video-style background overlay -->
+  <div class="hero-bg-video">
+    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1800&q=80"
+         alt="" class="hero-bg-img" onerror="this.style.display='none'"/>
+    <div class="hero-bg-overlay"></div>
+  </div>
+
+  <!-- text columns -->
+  <div class="hero-cols">
+    <div class="hero-left">
+      <p class="hero-eyebrow ar-only">خدمة تشطيب متكاملة</p>
+      <p class="hero-eyebrow fr-only">Service de finition complet</p>
+      <h1 class="hero-title">
+        <span class="ar-only">
+          <span class="hero-line-white">اجعل منزلك</span><br>
+          <span class="hero-line-orange">يتكلم عن ذوقك</span>
+        </span>
+        <span class="fr-only">
+          <span class="hero-line-white">Sublimez votre</span><br>
+          <span class="hero-line-orange">intérieur, de A à Z</span>
+        </span>
+      </h1>
+    </div>
+    <div class="hero-right">
+      <p class="hero-desc ar-only">سواء كان صالونك، غرفتك أو واجهتك — فريقنا يتكفل بكل شي: صباغة، تهيئة، زليج وفرش.</p>
+      <p class="hero-desc fr-only">Que ce soit pour votre salon, votre chambre ou votre façade, notre équipe prend tout en charge — peinture, aménagement, zellige et ameublement.</p>
+      <div class="hero-cta-group">
+        <a href="portfolio.html" class="btn-hero-cta">
+          <span class="ar-only">أعمالنا</span>
+          <span class="fr-only">Nos Réalisations</span>
+          <span class="btn-hero-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- centered showcase image -->
+  <div class="hero-showcase">
+    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1400&q=85"
+         alt="Interior design"
+         class="hero-showcase-img"
+         onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&q=80'"/>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section section" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- LEFT: text -->
+      <div class="about-text" data-aos="fade-right">
+        <h2 class="about-main-title">
+          <span class="ar-only">سلمان كلورز</span>
+          <span class="fr-only">Salman Colors</span>
+        </h2>
+        <p class="about-tagline">
+          <span class="ar-only">شريكك في التشطيب</span>
+          <span class="fr-only">Votre partenaire en finition</span>
+        </p>
+        <div class="about-divider"></div>
+        <p class="about-desc-large">
+          <span class="ar-only">شريكك الموثوق لمشاريع تشطيب استثنائية في المغرب</span>
+          <span class="fr-only">Votre partenaire de confiance pour des projets de finition d'exception au Maroc</span>
+        </p>
+        <p class="about-desc">
+          <span class="ar-only">فريق محترف ومتقن لتحويل منزلك — من الصباغة حتى الفرش، مفتاح في اليد.</span>
+          <span class="fr-only">Une équipe professionnelle et minutieuse pour transformer votre maison — de la peinture jusqu'à l'ameublement, clé en main.</span>
+        </p>
+        <div class="about-stats-row">
+          <div class="about-stat">
+            <span class="about-stat-num">200+</span>
+            <span class="about-stat-lbl"><span class="ar-only">مشروع منجز</span><span class="fr-only">Projets réalisés</span></span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">10+</span>
+            <span class="about-stat-lbl"><span class="ar-only">سنوات خبرة</span><span class="fr-only">Années d'exp.</span></span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">98%</span>
+            <span class="about-stat-lbl"><span class="ar-only">زبناء راضيين</span><span class="fr-only">Clients satisfaits</span></span>
+          </div>
+        </div>
+        <div class="about-btns">
+          <a href="devis.html" class="btn btn-gold">
+            <span class="ar-only">طلب تقدير</span>
+            <span class="fr-only">Commencer un projet</span>
+          </a>
+          <a href="portfolio.html" class="about-link">
+            <span class="ar-only">أعمالنا &#x2190;</span>
+            <span class="fr-only">Voir nos réalisations &#x2192;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: image + floating card -->
+      <div class="about-img-wrap" data-aos="fade-left">
+        <img src="IMG-20260507-WA0022.jpg" alt="Réalisation Salman Colors" class="about-img" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=85'">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section section" id="services">
+  <div class="container">
+    <div class="section-header center" data-aos="fade-up">
+      <h2 class="svc-swiper-title">
+        <span class="ar-only">خدماتنا</span>
+        <span class="fr-only">Nos Services</span>
+      </h2>
+      <p class="svc-swiper-sub">
+        <span class="ar-only">من البناء حتى الديكور — كل شي تحت سقف واحد</span>
+        <span class="fr-only">Du gros œuvre jusqu'à la décoration — tout sous un même toit</span>
+      </p>
+    </div>
+
+    <div class="swiper svc-swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="svc-sw-card">
+            <div class="svc-sw-img-wrap"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Gros Oeuvre" class="svc-sw-img"></div>
+            <div class="svc-sw-body">
+              <span class="svc-sw-num">01</span>
+              <h3 class="svc-sw-name"><span class="ar-only">بناء وتجديد</span><span class="fr-only">Gros Œuvre &amp; Rénovation</span></h3>
+              <p class="svc-sw-desc"><span class="ar-only">بناء وتجديد شامل من الأساسات.</span><span class="fr-only">Construction et rénovation complète depuis les fondations.</span></p>
+              <a href="services/gros-oeuvre.html" class="svc-sw-btn"><span class="ar-only">اكتشف &#x2190;</span><span class="fr-only">Découvrir &#x2192;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="svc-sw-card">
+            <div class="svc-sw-img-wrap"><img src="Peinture &amp; Finition.png.jpg" alt="Peinture" class="svc-sw-img" onerror="this.src='https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=700&q=80'"></div>
+            <div class="svc-sw-body">
+              <span class="svc-sw-num">02</span>
+              <h3 class="svc-sw-name"><span class="ar-only">صباغة وتشطيب</span><span class="fr-only">Peinture &amp; Finition</span></h3>
+              <p class="svc-sw-desc"><span class="ar-only">صباغة داخلية وخارجية، تادلكت وطلاء.</span><span class="fr-only">Peinture intérieure, extérieure, enduit et tadelakt.</span></p>
+              <a href="services/peinture.html" class="svc-sw-btn"><span class="ar-only">اكتشف &#x2190;</span><span class="fr-only">Découvrir &#x2192;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="svc-sw-card">
+            <div class="svc-sw-img-wrap"><img src="zalije.jpg" alt="Zellige" class="svc-sw-img" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80'"></div>
+            <div class="svc-sw-body">
+              <span class="svc-sw-num">03</span>
+              <h3 class="svc-sw-name"><span class="ar-only">زليج وكارو</span><span class="fr-only">Zellige</span></h3>
+              <p class="svc-sw-desc"><span class="ar-only">زليج حرفي، كارو وكل أنواع الكساء.</span><span class="fr-only">Zellige artisanal, carrelage et tous types de revêtements.</span></p>
+              <a href="services/zellige.html" class="svc-sw-btn"><span class="ar-only">اكتشف &#x2190;</span><span class="fr-only">Découvrir &#x2192;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="svc-sw-card">
+            <div class="svc-sw-img-wrap"><img src="Menuiserie &amp; Bois.jpg" alt="Menuiserie" class="svc-sw-img" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80'"></div>
+            <div class="svc-sw-body">
+              <span class="svc-sw-num">04</span>
+              <h3 class="svc-sw-name"><span class="ar-only">نجارة وخشب</span><span class="fr-only">Menuiserie &amp; Bois</span></h3>
+              <p class="svc-sw-desc"><span class="ar-only">أبواب، خزانات، ميبلي TV وخشب على القياس.</span><span class="fr-only">Portes, placards, meuble TV et bois sur mesure.</span></p>
+              <a href="services/menuiserie.html" class="svc-sw-btn"><span class="ar-only">اكتشف &#x2190;</span><span class="fr-only">Découvrir &#x2192;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="svc-sw-card">
+            <div class="svc-sw-img-wrap"><img src="Ameublement &amp; Décoration.jpg" alt="Ameublement" class="svc-sw-img" onerror="this.src='https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80'"></div>
+            <div class="svc-sw-body">
+              <span class="svc-sw-num">05</span>
+              <h3 class="svc-sw-name"><span class="ar-only">فرش وديكور</span><span class="fr-only">Ameublement &amp; Décoration</span></h3>
+              <p class="svc-sw-desc"><span class="ar-only">فرش كامل — صالون، غرفة ومطبخ مفتاح في اليد &#x1F511;</span><span class="fr-only">Ameublement complet — salon, chambre et cuisine clé en main &#x1F511;</span></p>
+              <a href="services/ameublement.html" class="svc-sw-btn"><span class="ar-only">اكتشف &#x2190;</span><span class="fr-only">Découvrir &#x2192;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="svc-sw-card">
+            <div class="svc-sw-img-wrap"><img src="Jardin &amp; Extérieur.jpg" alt="Jardin" class="svc-sw-img" onerror="this.src='https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=700&q=80'"></div>
+            <div class="svc-sw-body">
+              <span class="svc-sw-num">06</span>
+              <h3 class="svc-sw-name"><span class="ar-only">حديقة وخارج</span><span class="fr-only">Jardin &amp; Extérieur</span></h3>
+              <p class="svc-sw-desc"><span class="ar-only">حديقة، تراس وكل الأشغال الخارجية.</span><span class="fr-only">Jardin, terrasse et tous travaux d'extérieur.</span></p>
+              <a href="services/jardin.html" class="svc-sw-btn"><span class="ar-only">اكتشف &#x2190;</span><span class="fr-only">Découvrir &#x2192;</span></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-prev svc-sw-prev"></div>
+      <div class="swiper-button-next svc-sw-next"></div>
+      <div class="swiper-pagination svc-sw-dots"></div>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem;" data-aos="fade-up">
+      <a href="services.html" class="btn btn-outline-dark"><span class="ar-only">كل الخدمات &#x203A;</span><span class="fr-only">Tous nos services &#x203A;</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card" data-aos="fade-up"><div class="stat-num" data-count="200" data-prefix="+">0</div><div class="stat-line"></div><div class="stat-lbl"><span class="ar-only">مشروع منجز</span><span class="fr-only">Projets réalisés</span></div></div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="100"><div class="stat-num" data-count="10" data-prefix="+">0</div><div class="stat-line"></div><div class="stat-lbl"><span class="ar-only">سنوات خبرة</span><span class="fr-only">Années d'expérience</span></div></div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="200"><div class="stat-num" data-count="98" data-suffix="%">0</div><div class="stat-line"></div><div class="stat-lbl"><span class="ar-only">رضا العملاء</span><span class="fr-only">Satisfaction clients</span></div></div>
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="300"><div class="stat-num" data-count="100" data-suffix="%">0</div><div class="stat-line"></div><div class="stat-lbl"><span class="ar-only">ضمان الجودة</span><span class="fr-only">Garantie qualité</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RÉALISATIONS VIDEO SECTION -->
+<section class="real-section" id="realisations">
+  <div class="container">
+    <div class="real-header" data-aos="fade-up">
+      <span class="real-eyebrow"><span class="fr-only">Nos travaux en vidéo</span><span class="ar-only">أعمالنا بالفيديو</span></span>
+      <h2><span class="fr-only">Nos Réalisations</span><span class="ar-only">إنجازاتنا</span></h2>
+      <p class="real-header-sub"><span class="fr-only">Chaque projet raconte une histoire</span><span class="ar-only">كل مشروع يحكي قصة</span></p>
+    </div>
+
+    <div class="real-grid" data-aos="fade-up" data-aos-delay="80">
+      <div class="real-card" data-vid="qyiUCLVe4Fw" data-cat="peinture">
+        <img src="https://img.youtube.com/vi/qyiUCLVe4Fw/hqdefault.jpg" alt="Peinture" class="real-thumb">
+        <div class="real-overlay"></div>
+        <div class="real-play"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
+        <span class="real-tag"><span class="fr-only">Peinture</span><span class="ar-only">صباغة</span></span>
+      </div>
+      <div class="real-card" data-vid="h4H0NiZw9q0" data-cat="peinture">
+        <img src="https://img.youtube.com/vi/h4H0NiZw9q0/hqdefault.jpg" alt="Peinture" class="real-thumb">
+        <div class="real-overlay"></div>
+        <div class="real-play"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
+        <span class="real-tag"><span class="fr-only">Peinture</span><span class="ar-only">صباغة</span></span>
+      </div>
+      <div class="real-card" data-vid="wICk3W4eFT8" data-cat="zellige">
+        <img src="https://img.youtube.com/vi/wICk3W4eFT8/hqdefault.jpg" alt="Zellige" class="real-thumb">
+        <div class="real-overlay"></div>
+        <div class="real-play"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
+        <span class="real-tag"><span class="fr-only">Zellige</span><span class="ar-only">زليج</span></span>
+      </div>
+      <div class="real-card" data-vid="dtGQMGD8hx4" data-cat="zellige">
+        <img src="https://img.youtube.com/vi/dtGQMGD8hx4/hqdefault.jpg" alt="Zellige" class="real-thumb">
+        <div class="real-overlay"></div>
+        <div class="real-play"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
+        <span class="real-tag"><span class="fr-only">Zellige</span><span class="ar-only">زليج</span></span>
+      </div>
+      <div class="real-card" data-vid="pM-rhhIqEnk" data-cat="menuiserie">
+        <img src="https://img.youtube.com/vi/pM-rhhIqEnk/hqdefault.jpg" alt="Menuiserie" class="real-thumb">
+        <div class="real-overlay"></div>
+        <div class="real-play"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
+        <span class="real-tag"><span class="fr-only">Menuiserie</span><span class="ar-only">نجارة</span></span>
+      </div>
+      <div class="real-card" data-vid="kFzRwAJBuOY" data-cat="ameublement">
+        <img src="https://img.youtube.com/vi/kFzRwAJBuOY/hqdefault.jpg" alt="Ameublement" class="real-thumb">
+        <div class="real-overlay"></div>
+        <div class="real-play"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
+        <span class="real-tag"><span class="fr-only">Ameublement</span><span class="ar-only">فرش</span></span>
+      </div>
+    </div>
+
+    <div style="text-align:center;" data-aos="fade-up">
+      <a href="realisations.html" class="btn btn-outline-dark">
+        <span class="fr-only">Voir toutes nos réalisations →</span>
+        <span class="ar-only">← شوف كل إنجازاتنا</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO LIGHTBOX -->
+<div class="real-lightbox" id="realLightbox">
+  <div class="real-lb-inner">
+    <button class="real-lb-close" id="realLbClose" aria-label="Fermer">✕</button>
+    <iframe id="realLbFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- NOTRE MÉTHODE -->
+<section class="methode-section">
+  <div class="container">
+
+    <div class="methode-header" data-aos="fade-up">
+      <h2>
+        <span class="fr-only">Notre Méthode de Travail</span>
+        <span class="ar-only">طريقة عملنا</span>
+      </h2>
+      <p class="methode-header-sub">
+        <span class="fr-only">Un processus simple et transparent, de A à Z</span>
+        <span class="ar-only">مسار بسيط وشفاف من الألف إلى الياء</span>
+      </p>
+    </div>
+
+    <div class="methode-row" data-aos="fade-up" data-aos-delay="80">
+
+      <!-- STEP 01 -->
+      <div class="methode-step">
+        <span class="methode-num">01</span>
+        <div class="methode-icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="methode-step-title">
+          <span class="fr-only">Contact &amp; Consultation</span>
+          <span class="ar-only">التواصل والاستشارة</span>
+        </div>
+        <p class="methode-step-text">
+          <span class="fr-only">Contactez-nous via WhatsApp. Nous écoutons votre projet et définissons vos besoins.</span>
+          <span class="ar-only">تواصل معنا عبر واتساب. نسمع مشروعك ونحدد احتياجاتك.</span>
+        </p>
+      </div>
+
+      <div class="methode-arrow">→</div>
+
+      <!-- STEP 02 -->
+      <div class="methode-step">
+        <span class="methode-num">02</span>
+        <div class="methode-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+        <div class="methode-step-title">
+          <span class="fr-only">Devis &amp; Planification</span>
+          <span class="ar-only">العرض والتخطيط</span>
+        </div>
+        <p class="methode-step-text">
+          <span class="fr-only">Nous vous proposons un devis détaillé et un planning clair pour votre projet.</span>
+          <span class="ar-only">نقدم لك عرض ثمن مفصل وبرنامج زمني واضح لمشروعك.</span>
+        </p>
+      </div>
+
+      <div class="methode-arrow">→</div>
+
+      <!-- STEP 03 -->
+      <div class="methode-step">
+        <span class="methode-num">03</span>
+        <div class="methode-icon"><i class="fa-solid fa-hammer"></i></div>
+        <div class="methode-step-title">
+          <span class="fr-only">Réalisation</span>
+          <span class="ar-only">التنفيذ</span>
+        </div>
+        <p class="methode-step-text">
+          <span class="fr-only">Notre équipe intervient avec précision, qualité et dans les délais convenus.</span>
+          <span class="ar-only">فريقنا يشتغل بدقة وجودة عالية في الأوقات المحددة.</span>
+        </p>
+      </div>
+
+      <div class="methode-arrow">→</div>
+
+      <!-- STEP 04 -->
+      <div class="methode-step">
+        <span class="methode-num">04</span>
+        <div class="methode-icon"><i class="fa-solid fa-key"></i></div>
+        <div class="methode-step-title">
+          <span class="fr-only">Livraison Clé en Main</span>
+          <span class="ar-only">التسليم الجاهز</span>
+        </div>
+        <p class="methode-step-text">
+          <span class="fr-only">Vous récupérez votre espace entièrement terminé. Vous payez… vous venez habiter.</span>
+          <span class="ar-only">تستلم فضاءك منتهياً بالكامل. تخلص… تجي تسكن.</span>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="methode-cta" data-aos="fade-up" data-aos-delay="120">
+      <a href="https://wa.me/212662193210?text=Bonjour%2C%20je%20voudrais%20d%C3%A9marrer%20mon%20projet" target="_blank" class="methode-cta-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="fr-only">📲 Démarrer mon projet</span>
+        <span class="ar-only">📲 ابدأ مشروعي</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="expertise-section section">
+  <div class="container">
+    <div class="expertise-grid">
+      <div data-aos="fade-right">
+        <div class="section-tag"><span class="ar-only">خبرتنا</span><span class="fr-only">Notre expertise</span></div>
+        <h2 class="section-title"><span class="ar-only">نتقنو كل ما نديرو</span><span class="fr-only">Nous maîtrisons tout ce que nous faisons</span></h2>
+        <p class="section-sub" style="margin-bottom:2.5rem;"><span class="ar-only">خبرة سنوات في كل فروع التشطيب تعطيك الثقة الكاملة في جودة شغلنا</span><span class="fr-only">Des années d'expérience dans tous les domaines pour vous garantir la meilleure qualité</span></p>
+        <div class="skill-item"><div class="skill-head"><span class="skill-name"><span class="ar-only">الصباغة والديكور</span><span class="fr-only">Peinture & Décoration</span></span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-fill" data-pct="90"></div></div></div>
+        <div class="skill-item"><div class="skill-head"><span class="skill-name">Aménagement</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-pct="85"></div></div></div>
+        <div class="skill-item"><div class="skill-head"><span class="skill-name"><span class="ar-only">الزليج والبلاط</span><span class="fr-only">Zellige & Carrelage</span></span><span class="skill-pct">92%</span></div><div class="skill-track"><div class="skill-fill" data-pct="92"></div></div></div>
+        <div class="skill-item"><div class="skill-head"><span class="skill-name"><span class="ar-only">الفرش والتأثيث</span><span class="fr-only">Ameublement</span></span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" data-pct="88"></div></div></div>
+      </div>
+      <div data-aos="fade-left"><img src="IMG-20260507-WA0040.jpg" alt="Expertise" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80'" class="expertise-img"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section section" id="process">
+  <div class="container">
+    <div class="process-grid">
+      <div data-aos="fade-right">
+        <div class="section-tag"><span class="ar-only">كيفاش نشتغلو</span><span class="fr-only">Notre méthode</span></div>
+        <h2 class="section-title" style="margin-bottom:2.5rem;"><span class="ar-only">4 خطوات من البداية حتى المفتاح</span><span class="fr-only">4 étapes du début jusqu'à la clé</span></h2>
+        <div class="process-steps">
+          <div class="p-step active"><div class="p-num">01</div><div class="p-body"><div class="p-title"><span class="ar-only">التواصل والاستشارة</span><span class="fr-only">Contact & Consultation</span></div><div class="p-desc"><span class="ar-only">اتصل بينا وحنا نتوجهوك — استشارة مجانية عبر واتساب</span><span class="fr-only">Contactez-nous, nous vous guiderons — consultation gratuite par WhatsApp</span></div></div></div>
+          <div class="p-step"><div class="p-num">02</div><div class="p-body"><div class="p-title"><span class="ar-only">التخطيط والتصميم</span><span class="fr-only">Planification & Design</span></div><div class="p-desc"><span class="ar-only">نحددو معاك التصور الكامل للمشروع والأثمنة بوضوح</span><span class="fr-only">Nous définissons ensemble la vision complète et les prix clairement</span></div></div></div>
+          <div class="p-step"><div class="p-num">03</div><div class="p-body"><div class="p-title"><span class="ar-only">التنفيذ</span><span class="fr-only">Réalisation</span></div><div class="p-desc"><span class="ar-only">فريقنا يبدأ الشغل بجودة عالية في الأوقات المحددة</span><span class="fr-only">Notre équipe travaille avec qualité et professionnalisme dans les délais</span></div></div></div>
+          <div class="p-step"><div class="p-num">04</div><div class="p-body"><div class="p-title"><span class="ar-only">التسليم &#x1F511;</span><span class="fr-only">Livraison &#x1F511;</span></div><div class="p-desc"><span class="ar-only">نتا تجي تسكن — مفتاح في يدك وأنت راضي</span><span class="fr-only">Vous venez habiter — clé en main, vous êtes satisfait</span></div></div></div>
+        </div>
+      </div>
+      <div class="process-img-wrap" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Process" class="process-img">
+        <div class="process-img-tag"><span class="ar-only">نتا تجي تسكن &#x1F511;</span><span class="fr-only">Vous venez habiter &#x1F511;</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section class="rev-section" id="temoignages">
+  <div class="container">
+    <div class="rev-header" data-aos="fade-up">
+      <h2><span class="fr-only">Ce Que Disent Nos Clients</span><span class="ar-only">ماذا يقول عملاؤنا</span></h2>
+      <p class="rev-header-sub"><span class="fr-only">La satisfaction de nos clients, notre meilleure récompense</span><span class="ar-only">رضا عملائنا، أفضل مكافأة لنا</span></p>
+    </div>
+
+    <div class="rev-swiper-wrap" data-aos="fade-up" data-aos-delay="80">
+      <div class="swiper rev-swiper">
+        <div class="swiper-wrapper" id="revSwiperWrapper">
+
+          <!-- REVIEW 1 -->
+          <div class="swiper-slide">
+            <div class="rev-card">
+              <div class="rev-card-top">
+                <div class="rev-avatar">MK</div>
+                <div>
+                  <div class="rev-author-name">Mohammed K.</div>
+                  <div class="rev-author-city">📍 Casablanca</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span>
+              </div>
+              <p class="rev-quote">"Équipe très professionnelle, travail soigné et livraison dans les délais. Je recommande!"</p>
+              <div class="rev-card-footer">
+                <span class="rev-service-tag">Peinture</span>
+                <span class="rev-date">Mai 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- REVIEW 2 -->
+          <div class="swiper-slide">
+            <div class="rev-card">
+              <div class="rev-card-top">
+                <div class="rev-avatar">FZ</div>
+                <div>
+                  <div class="rev-author-name">Fatima Z.</div>
+                  <div class="rev-author-city">📍 Rabat</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span>
+              </div>
+              <p class="rev-quote">"Résultat magnifique, exactement ce que je voulais. Vous payez et vous venez habiter!"</p>
+              <div class="rev-card-footer">
+                <span class="rev-service-tag">Aménagement</span>
+                <span class="rev-date">Avril 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- REVIEW 3 -->
+          <div class="swiper-slide">
+            <div class="rev-card">
+              <div class="rev-card-top">
+                <div class="rev-avatar">KB</div>
+                <div>
+                  <div class="rev-author-name">Karim B.</div>
+                  <div class="rev-author-city">📍 Marrakech</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span>
+              </div>
+              <p class="rev-quote">"Pose parfaite, artisans qualifiés. Je referai appel à eux sans hésiter."</p>
+              <div class="rev-card-footer">
+                <span class="rev-service-tag">Zellige</span>
+                <span class="rev-date">Mars 2025</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev rev-swiper-prev"></div>
+        <div class="swiper-button-next rev-swiper-next"></div>
+        <div class="swiper-pagination rev-swiper-dots"></div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="rev-form-section" data-aos="fade-up">
+      <div class="rev-form-title">
+        <span class="fr-only">Partagez Votre Expérience</span>
+        <span class="ar-only">شارك تجربتك</span>
+      </div>
+      <form id="revForm" novalidate>
+        <div class="rev-form-grid">
+          <div class="rev-form-group">
+            <label class="rev-form-label" for="revName"><span class="fr-only">Nom complet *</span><span class="ar-only">الاسم الكامل *</span></label>
+            <input class="rev-form-input" id="revName" type="text" required placeholder="Mohammed K.">
+          </div>
+          <div class="rev-form-group">
+            <label class="rev-form-label" for="revCity"><span class="fr-only">Ville *</span><span class="ar-only">المدينة *</span></label>
+            <input class="rev-form-input" id="revCity" type="text" required placeholder="Casablanca">
+          </div>
+          <div class="rev-form-group">
+            <label class="rev-form-label" for="revService"><span class="fr-only">Service utilisé</span><span class="ar-only">الخدمة المستخدمة</span></label>
+            <select class="rev-form-select" id="revService">
+              <option value="Peinture">Peinture</option>
+              <option value="Aménagement">Aménagement</option>
+              <option value="Zellige">Zellige</option>
+              <option value="Menuiserie">Menuiserie</option>
+              <option value="Ameublement">Ameublement</option>
+              <option value="Jardin">Jardin</option>
+            </select>
+          </div>
+          <div class="rev-form-group">
+            <label class="rev-form-label"><span class="fr-only">Note</span><span class="ar-only">التقييم</span></label>
+            <div class="rev-star-picker">
+              <input type="radio" name="revRating" id="s5" value="5"><label for="s5">★</label>
+              <input type="radio" name="revRating" id="s4" value="4"><label for="s4">★</label>
+              <input type="radio" name="revRating" id="s3" value="3"><label for="s3">★</label>
+              <input type="radio" name="revRating" id="s2" value="2"><label for="s2">★</label>
+              <input type="radio" name="revRating" id="s1" value="1" checked><label for="s1">★</label>
+            </div>
+          </div>
+          <div class="rev-form-group full">
+            <label class="rev-form-label" for="revText"><span class="fr-only">Votre avis *</span><span class="ar-only">رأيك *</span></label>
+            <textarea class="rev-form-textarea" id="revText" required placeholder="Partagez votre expérience avec Salman Colors..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="rev-form-submit">
+          <span class="fr-only">✉️ Envoyer mon avis</span>
+          <span class="ar-only">✉️ أرسل رأيي</span>
+        </button>
+        <div class="rev-success-msg" id="revSuccessMsg">
+          <span class="fr-only">✅ Merci ! Votre avis a été publié.</span>
+          <span class="ar-only">✅ شكراً! تم نشر رأيك.</span>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:1.5rem;" data-aos="fade-up">
+    <span class="cta-banner-label"><span class="ar-only">جاهزين نخدموك</span><span class="fr-only">Nous sommes prêts pour vous</span></span>
+    <h2><span class="ar-only">بغيتي دارك تبان كاملة؟</span><span class="fr-only">Vous voulez une maison impeccable ?</span></h2>
+    <p><span class="ar-only" dir="rtl">من الساس حتى آخر لمسة — <bdi>clé en main</bdi> — نتا تخلص وتجي تسكن.</span><span class="fr-only">De la structure jusqu'à la dernière touche — clé en main. Payez, entrez, profitez.</span></p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+      <a href="tel:0662193210" class="cta-btn-primary" style="padding:1rem 2.5rem;font-weight:700;font-size:1rem;text-decoration:none;display:inline-block;"><span class="ar-only">📞 اتصل بينا دابا</span><span class="fr-only">📞 Appelez-nous maintenant</span></a>
+      <a href="https://wa.me/212662193210" target="_blank" rel="noopener" class="cta-btn-secondary" style="padding:1rem 2.5rem;font-weight:700;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> <span class="ar-only">واتساب</span><span class="fr-only">WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Preview -->
+<section class="blog-preview" id="blog">
+  <div class="container">
+    <span class="section-label ar-only">نصائح ومعلومات</span>
+    <span class="section-label fr-only">Conseils & Infos</span>
+    <h2 class="section-title" data-aos="fade-up"><span class="ar-only">من تجربتنا معاكم</span><span class="fr-only">De notre expérience avec vous</span></h2>
+    <p class="section-sub" data-aos="fade-up"><span class="ar-only">مقالات تساعدك تختار وتقرر بثقة</span><span class="fr-only">Articles pour vous aider à choisir et décider en confiance</span></p>
+    <div class="blog-grid">
+
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&w=600" alt="صباغة" loading="lazy">
+        <div class="blog-card-body">
+          <span class="blog-tag ar-only">صباغة</span>
+          <span class="blog-tag fr-only">Peinture</span>
+          <h3><span class="ar-only">كيفاش تختار اللون المناسب لدارك؟</span><span class="fr-only">Comment choisir la bonne couleur pour votre maison ?</span></h3>
+          <p><span class="ar-only">اللون كيأثر على المزاج والإحساس بالمكان. هاد النصائح غادي تساعدك تختار بثقة.</span><span class="fr-only">La couleur influence l'humeur et la perception de l'espace. Nos conseils vous aident à choisir avec confiance.</span></p>
+          <a href="blog/ikhtiar-loun.html" class="blog-read-more"><span class="ar-only">اقرأ أكثر</span><span class="fr-only">Lire la suite</span></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=85" alt="الساس والبنية" loading="lazy">
+        <div class="blog-card-body">
+          <span class="blog-tag ar-only">الساس والبنية</span>
+          <span class="blog-tag fr-only">Structure & Fondation</span>
+          <h3><span class="ar-only">علاش الساس مهم قبل أي ديكور؟</span><span class="fr-only">Pourquoi la structure est essentielle avant toute décoration ?</span></h3>
+          <p><span class="ar-only">قبل ما تبدا تفكر في اللوان والزليج، خاصك تتأكد من السطوح والجدران.</span><span class="fr-only">Avant de penser aux couleurs et au zellige, assurez-vous que vos surfaces et murs sont sains.</span></p>
+          <a href="blog/assas-9bal-dikor.html" class="blog-read-more"><span class="ar-only">اقرأ أكثر</span><span class="fr-only">Lire la suite</span></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://images.pexels.com/photos/30159107/pexels-photo-30159107.jpeg?auto=compress&w=600" alt="زليج وتشطيب" loading="lazy">
+        <div class="blog-card-body">
+          <span class="blog-tag ar-only">زليج وتشطيب</span>
+          <span class="blog-tag fr-only">Zellige & Finition</span>
+          <h3><span class="ar-only">الزليج المغربي — تراث وأناقة في نفس الوقت</span><span class="fr-only">Le zellige marocain — patrimoine et élégance à la fois</span></h3>
+          <p><span class="ar-only">الزليج مش غير ديكور، هو هوية. شوف كيفاش تدمجه مع الستايل العصري.</span><span class="fr-only">Le zellige n'est pas qu'un décor, c'est une identité. Découvrez comment l'intégrer dans un style moderne.</span></p>
+          <a href="blog/zellige-maghribi.html" class="blog-read-more"><span class="ar-only">اقرأ أكثر</span><span class="fr-only">Lire la suite</span></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container cta-content" data-aos="fade-up">
+    <h2 class="cta-title"><span class="ar-only">جاهز تبدا مشروعك؟</span><span class="fr-only">Prêt à démarrer votre projet?</span></h2>
+    <p class="cta-sub"><span class="ar-only">تواصل معنا دابا على واتساب — استشارة مجانية بدون التزام</span><span class="fr-only">Contactez-nous maintenant sur WhatsApp — consultation gratuite sans engagement</span></p>
+    <div class="cta-btns">
+      <a href="https://wa.me/212662193210" target="_blank" rel="noopener" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="ar-only">واتساب مباشر</span><span class="fr-only">WhatsApp direct</span></a>
+      <a href="contact.html" class="btn btn-outline"><span class="ar-only">اتصل بنا</span><span class="fr-only">Nous contacter</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+
+    <!-- Col 1: Brand -->
+    <div class="footer-col">
+      <img src="logo.png" alt="Salman Colors" class="footer-logo-img" style="margin-bottom:12px;" onerror="this.style.display='none'">
+      <div class="footer-tagline"><span class="ar-only">من الساس حتى آخر لمسة</span><span class="fr-only">De la structure à la dernière touche</span></div>
+      <p class="footer-desc"><span class="ar-only">خدمة تشطيب متكاملة بالمغرب — صباغة، زليج، فرنيتور، وأكثر.</span><span class="fr-only">Service de finition complet au Maroc — peinture, zellige, mobilier et plus.</span></p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/salmanecolors" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/salmancolor/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@salman_color" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@salmancolor" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Col 2: خدماتنا -->
+    <div class="footer-col">
+      <h4><span class="ar-only">خدماتنا</span><span class="fr-only">Nos services</span></h4>
+      <ul>
+        <li><a href="services.html#services"><span class="ar-only">الصباغة والطلاء</span><span class="fr-only">Peinture & Revêtement</span></a></li>
+        <li><a href="services.html#services"><span class="ar-only">الزليج والتبليط</span><span class="fr-only">Zellige & Carrelage</span></a></li>
+        <li><a href="services.html#services"><span class="ar-only">الفرش والمفروشات</span><span class="fr-only">Ameublement & Décoration</span></a></li>
+        <li><a href="services.html#services"><span class="ar-only">الساس والبنية</span><span class="fr-only">Gros Œuvre</span></a></li>
+        <li><a href="services.html#services"><span class="ar-only">المنجرة والبواب</span><span class="fr-only">Menuiserie & Bois</span></a></li>
+        <li><a href="services.html#services"><span class="ar-only">تهيئة الحديقة</span><span class="fr-only">Aménagement Jardin</span></a></li>
+      </ul>
+    </div>
+
+    <!-- Col 3: روابط سريعة -->
+    <div class="footer-col">
+      <h4><span class="ar-only">روابط سريعة</span><span class="fr-only">Liens rapides</span></h4>
+      <ul>
+        <li><a href="#hero"><span class="ar-only">الرئيسية</span><span class="fr-only">Accueil</span></a></li>
+        <li><a href="#about"><span class="ar-only">من نحن</span><span class="fr-only">À propos</span></a></li>
+        <li><a href="#realisations"><span class="ar-only">أشغالنا</span><span class="fr-only">Réalisations</span></a></li>
+        <li><a href="#temoignages"><span class="ar-only">آراء زبنائنا</span><span class="fr-only">Témoignages</span></a></li>
+        <li><a href="contact.html"><span class="ar-only">تواصل معنا</span><span class="fr-only">Contact</span></a></li>
+      </ul>
+    </div>
+
+    <!-- Col 4: تواصل معنا -->
+    <div class="footer-col">
+      <h4><span class="ar-only">تواصل معنا</span><span class="fr-only">Contactez-nous</span></h4>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:0662193210">0662 193 210</a>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/212662193210" target="_blank" rel="noopener"><span class="ar-only">واتساب</span><span class="fr-only">WhatsApp</span></a>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span><span class="ar-only">المغرب — جميع المدن</span><span class="fr-only">Maroc — toutes les villes</span></span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:salmancolors@gmail.com">salmancolors@gmail.com</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <span><span class="ar-only">صُنع بـ ❤️ في المغرب</span><span class="fr-only">Fait avec ❤️ au Maroc</span></span>
+    <span><span class="ar-only">© 2025 Salman Colors — جميع الحقوق محفوظة</span><span class="fr-only">© 2025 Salman Colors — Tous droits réservés</span></span>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a href="https://wa.me/212662193210" target="_blank" rel="noopener" class="wa-float-orange" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">&#x2191;</button>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+new Swiper('.svc-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  navigation: { nextEl: '.svc-sw-next', prevEl: '.svc-sw-prev' },
+  pagination: { el: '.svc-sw-dots', clickable: true },
+  breakpoints: {
+    640:  { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
+
+// ── Reviews Swiper ──────────────────────────────
+const revSwiper = new Swiper('.rev-swiper', {
+  slidesPerView: 1, spaceBetween: 24, loop: false,
+  navigation: { nextEl: '.rev-swiper-next', prevEl: '.rev-swiper-prev' },
+  pagination: { el: '.rev-swiper-dots', clickable: true },
+  breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+});
+
+// ── Load saved reviews from localStorage ────────
+(function loadSavedReviews() {
+  const saved = JSON.parse(localStorage.getItem('sc-reviews') || '[]');
+  saved.forEach(r => addRevSlide(r));
+  if (saved.length) revSwiper.update();
+})();
+
+function addRevSlide(r) {
+  const initials = r.name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0,2);
+  const stars = '★'.repeat(r.rating) + '<span class="rev-star empty">' + '★'.repeat(5 - r.rating) + '</span>';
+  const now = new Date(); const months = ['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Aoû','Sep','Oct','Nov','Déc'];
+  const dateStr = months[now.getMonth()] + ' ' + now.getFullYear();
+  const html = `<div class="swiper-slide"><div class="rev-card">
+    <div class="rev-card-top"><div class="rev-avatar">${initials}</div><div>
+      <div class="rev-author-name">${r.name}</div>
+      <div class="rev-author-city">📍 ${r.city}</div></div></div>
+    <div class="rev-stars">${'<span class="rev-star">★</span>'.repeat(r.rating)}${'<span class="rev-star empty">★</span>'.repeat(5-r.rating)}</div>
+    <p class="rev-quote">"${r.text}"</p>
+    <div class="rev-card-footer"><span class="rev-service-tag">${r.service}</span><span class="rev-date">${dateStr}</span></div>
+  </div></div>`;
+  document.getElementById('revSwiperWrapper').insertAdjacentHTML('beforeend', html);
+}
+
+// ── Review form submit ────────────────────────
+document.getElementById('revForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name    = document.getElementById('revName').value.trim();
+  const city    = document.getElementById('revCity').value.trim();
+  const service = document.getElementById('revService').value;
+  const text    = document.getElementById('revText').value.trim();
+  const rating  = parseInt(document.querySelector('input[name="revRating"]:checked')?.value || 5);
+  if (!name || !city || !text) return;
+  const review = { name, city, service, text, rating };
+  const saved = JSON.parse(localStorage.getItem('sc-reviews') || '[]');
+  saved.push(review);
+  localStorage.setItem('sc-reviews', JSON.stringify(saved));
+  addRevSlide(review);
+  revSwiper.update();
+  revSwiper.slideTo(revSwiper.slides.length - 1);
+  document.getElementById('revSuccessMsg').classList.add('show');
+  this.reset();
+  setTimeout(() => document.getElementById('revSuccessMsg').classList.remove('show'), 4000);
+});
+
+// ── Video Lightbox ──────────────────────────────
+(function () {
+  const lb    = document.getElementById('realLightbox');
+  const frame = document.getElementById('realLbFrame');
+  const close = document.getElementById('realLbClose');
+  if (!lb) return;
+
+  document.querySelectorAll('.real-card').forEach(card => {
+    card.addEventListener('click', () => {
+      frame.src = 'https://www.youtube.com/embed/' + card.dataset.vid + '?autoplay=1&rel=0';
+      lb.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLb() {
+    lb.classList.remove('is-open');
+    frame.src = '';
+    document.body.style.overflow = '';
+  }
+  close.addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+})();
+</script>
+</body>
+</html>
