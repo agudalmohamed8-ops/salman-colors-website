@@ -1934,3 +1934,11 @@ html[dir="rtl"] .methode-num { left: auto; right: 1.1rem; }
   .filter-bar { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 0.5rem; }
   .f-tab { flex-shrink: 0; }
 }
+
+
+/* === Fix: mobile horizontal overflow (white strip on the side) — added by Claude === */
+html, body { overflow-x: hidden; max-width: 100%; }
+@media (max-width: 768px) {
+  .process-img-tag { inset-inline-start: 0; }
+  .about-text { margin-inline: 0; }
+}
