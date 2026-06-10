@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (f) f.addEventListener('submit', lead);
   });
   var p = location.pathname.toLowerCase();
-  if (window.fbq && (p.indexOf('services') > -1 || p.indexOf('realisation') > -1)) {
+  if (window.fbq && (p.indexOf('services') > -1 || p.indexOf('realisation') > -1 || p.indexOf('portfolio') > -1)) {
     fbq('track', 'ViewContent');
   }
 })();
