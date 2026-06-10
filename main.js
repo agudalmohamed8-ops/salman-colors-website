@@ -295,3 +295,21 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.style.transition = 'opacity 0.45s ease';
   requestAnimationFrame(() => { document.body.style.opacity = '1'; });
 });
+
+
+/* ── Meta Pixel events (Lead on WhatsApp + forms) ── */
+(function () {
+  function lead() { if (window.fbq) fbq('track', 'Lead'); }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href*="wa.me"], .btn-whatsapp, .wa-float-orange');
+    if (a) lead();
+  });
+  ['contactForm', 'devisForm'].forEach(function (id) {
+    var f = document.getElementById(id);
+    if (f) f.addEventListener('submit', lead);
+  });
+  var p = location.pathname.toLowerCase();
+  if (window.fbq && (p.indexOf('services') > -1 || p.indexOf('realisation') > -1)) {
+    fbq('track', 'ViewContent');
+  }
+})();
